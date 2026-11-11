@@ -423,6 +423,14 @@ footer ul a:hover{color:var(--gold-deep)}
 .lb p{color:#fff;font-weight:600;text-align:center}
 .lb .close{position:absolute;top:calc(16px + env(safe-area-inset-top,0px));left:calc(16px + env(safe-area-inset-left,0px));background:var(--paper);border:0;width:44px;height:44px;border-radius:50%;font-size:22px;cursor:pointer;color:var(--ink)}
 
+
+/* proof band: cards on phones */
+@media (max-width:820px){
+  .proof .wrap{grid-template-columns:1fr 1fr;gap:10px;padding:20px max(16px,env(safe-area-inset-right,0px)) 22px max(16px,env(safe-area-inset-left,0px))}
+  .proof div,.proof div:first-child,.proof div:nth-child(3){border:1px solid rgba(246,242,236,.16);border-radius:6px;padding:16px 10px;align-items:center;text-align:center;gap:4px;background:rgba(255,255,255,.03)}
+  .proof b{font-size:24px;color:#E2B36A}
+  .proof span{font-size:13.5px;line-height:1.35}
+}
 /* ===== 2026-11 redesign: hero (sketch A) + sticky contact bar ===== */
 .hero-top{display:flex;flex-direction:column;gap:24px;min-width:0}
 .hero-mosaic .m-only{display:none}
