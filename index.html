@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>WallUp | חיפוי קירות ומטבחים – תיק עבודות, ייעוץ והתקנה</title>
-<meta name="description" content="WallUp – חיפוי קירות ומטבחים בגוש דן ובמרכז: סרגלים מחורצים, פלטות עם פסי ניתוק ותאורת לד לסלון, לחדר השינה, למטבח ולעסקים. ראו את תיק העבודות, שלחו תמונה של הקיר בוואטסאפ וקבלו הצעת מחיר.">
+<title>WallUp | חיפוי קירות בסרגלים ופלטות – אספקה והתקנה מיידית</title>
+<meta name="description" content="WallUp – חיפוי קירות בגוש דן ובמרכז: סרגלים מחורצים, פלטות עם פסי ניתוק ותאורת לד לסלון, לחדר השינה ולעסקים. ראו את תיק העבודות, שלחו תמונה של הקיר בוואטסאפ וקבלו הצעת מחיר.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="he_IL">
 <meta property="og:site_name" content="WallUp">
-<meta property="og:title" content="WallUp | חיפוי קירות ומטבחים">
+<meta property="og:title" content="WallUp | חיפוי קירות">
 <meta property="og:description" content="תיק עבודות של חיפוי קירות: סרגלים, פלטות ותאורת לד. שלחו תמונה של הקיר וקבלו הצעת מחיר בוואטסאפ.">
 <meta property="og:image" content="img/hidden-door.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -417,14 +417,61 @@ footer ul a:hover{color:var(--gold-deep)}
 .lb img{max-height:80vh;max-width:100%;border-radius:var(--r)}
 .lb p{color:#fff;font-weight:600;text-align:center}
 .lb .close{position:absolute;top:calc(16px + env(safe-area-inset-top,0px));left:calc(16px + env(safe-area-inset-left,0px));background:var(--paper);border:0;width:44px;height:44px;border-radius:50%;font-size:22px;cursor:pointer;color:var(--ink)}
+
+/* ===== 2026-11 redesign: hero (sketch A) + sticky contact bar ===== */
+.hero-top{display:flex;flex-direction:column;gap:24px;min-width:0}
+.hero-mosaic .m-only{display:none}
+.hb-l2 b{font-family:var(--body);font-weight:800;font-size:17px}
+.mat .sw{aspect-ratio:1/1;max-width:180px}
+@media (max-width:760px){
+  .hero{padding:0 0 30px;background:var(--paper)}
+  .hero-bg{display:none}
+  .hero-grid{display:flex;flex-direction:column;gap:22px}
+  .hero-copy{display:contents}
+  .hero-top{order:1;position:relative;margin-inline:calc(-1 * max(20px,env(safe-area-inset-left,0px)));min-height:min(600px,88svh);padding:76px 20px 22px;justify-content:flex-end;gap:12px;color:#F6F2EC;
+    background:linear-gradient(180deg,rgba(21,20,19,.08) 20%,rgba(21,20,19,.62) 52%,rgba(21,20,19,.92) 78%) ,url(img/hero-m.webp) center 30%/cover no-repeat var(--ink)}
+  .hero-top .hero-badge{position:absolute;top:16px;right:20px;margin:0;background:var(--gold);border:0;outline:0;box-shadow:0 6px 16px rgba(0,0,0,.25);padding:8px 12px}
+  .hero-top .hb-ic,.hero-top .hb-l1,.hero-top .hb-l2,.hero-top .hb-l2 b{color:#fff}
+  .hero-top .eyebrow{display:none}
+  .hero h1{color:#F6F2EC;text-shadow:none;font-size:34px;font-weight:500;line-height:1.12}
+  .hero h1 em{color:#E2B36A;text-shadow:none}
+  .hero .lead{color:#E6DFD4;text-shadow:none;font-size:16px;font-weight:400;line-height:1.55}
+  .hero-ctas{flex-direction:column;align-items:stretch;gap:10px}
+  .hero-ctas>.btn{width:100%}
+  .hero-wa{min-height:58px;font-size:18px;font-weight:800}
+  .hero-tel{display:none}
+  .hero .promise{color:#DDD5C9;justify-content:space-between;gap:6px;font-size:13px;font-weight:700}
+  .hero .promise span::before{background:#E2B36A}
+  .hero-mosaic{order:2;display:flex;height:auto;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin-inline:-20px;padding-inline:20px;scrollbar-width:none}
+  .hero-mosaic::-webkit-scrollbar{display:none}
+  .hero-mosaic figure,.hero-mosaic figure:first-of-type{flex:0 0 74%;height:330px;grid-row:auto;scroll-snap-align:center}
+  .hero-mosaic .m-only{display:block}
+  .hero-mosaic figure:first-of-type{order:9}
+  .hero-form{order:3;background:var(--stone);border:0;box-shadow:none;max-width:none;backdrop-filter:none;-webkit-backdrop-filter:none}
+}
+
+/* sticky contact bar: WhatsApp, phone, form */
+.cbar{display:none}
+@media (max-width:760px){
+  .mbar,.fab,.fab-tel,.fab-form{display:none!important}
+  .cbar{display:grid;grid-template-columns:1fr 1fr 1.7fr;gap:8px;position:fixed;inset:auto 0 0 0;z-index:70;background:rgba(250,248,245,.97);backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:9px max(12px,env(safe-area-inset-right,0px)) calc(9px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px))}
+  .cbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:54px;border-radius:var(--r);text-decoration:none;font-weight:800;font-size:14px;line-height:1.1}
+  .cbar svg{width:20px;height:20px}
+  .cbar .cb-form{border:1.5px solid var(--ink);color:var(--ink)}
+  .cbar .cb-tel{background:var(--ink);color:#fff}
+  .cbar .cb-wa{background:var(--wa);color:#fff;flex-direction:row;gap:8px;font-size:16px}
+  body{padding-bottom:84px}
+}
+.fab-form{position:fixed;left:calc(22px + env(safe-area-inset-left,0px));bottom:calc(162px + env(safe-area-inset-bottom,0px));z-index:70;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--paper);color:var(--ink);border:1.5px solid var(--ink);box-shadow:0 10px 26px rgba(0,0,0,.18);transition:transform .2s}
+.fab-form:hover{transform:scale(1.06)}
+.fab-form svg{width:24px;height:24px}
 </style>
 </head>
 <body>
 <header class="site" lang="he" dir="rtl"><div class="wrap">
-  <a class="brand" href="#top" aria-label="WallUp, לראש העמוד"><img src="logo.png" alt="WallUp חיפוי לקירות ומטבחים" width="900" height="240"></a>
+  <a class="brand" href="#top" aria-label="WallUp, לראש העמוד"><img src="logo.png" alt="WallUp חיפוי קירות" width="900" height="240"></a>
   <nav class="main" id="nav" aria-label="ניווט ראשי">
     <a href="#work">תיק עבודות</a>
-    <a href="#kitchens">חיפוי מטבחים</a>
     <a href="#materials">חומרים וגוונים</a>
     <a href="#process">איך זה עובד</a>
     <a href="#areas">אזורי שירות</a>
@@ -441,24 +488,26 @@ footer ul a:hover{color:var(--gold-deep)}
 
 <section class="hero">
   <picture class="hero-bg" aria-hidden="true">
-    <source media="(max-width:760px)" srcset="img/hero-kitchen-m.webp" type="image/webp">
-    <source srcset="img/hero-kitchen.webp" type="image/webp">
-    <img src="img/hero-kitchen.jpg" alt="" width="1122" height="1402" fetchpriority="high" decoding="async">
+    <source media="(max-width:760px)" srcset="img/hero-m.webp" type="image/webp">
+    <source srcset="img/hero.webp" type="image/webp">
+    <img src="img/hero.jpg" alt="" width="1290" height="1273" fetchpriority="high" decoding="async">
   </picture>
   <div class="wrap hero-grid">
   <div class="hero-copy">
+   <div class="hero-top">
     <div class="hero-badge" role="note">
       <span class="hb-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M10 2h4M12 2v3"/></svg></span>
-      <span class="hb-txt"><span class="hb-l1">אספקה והתקנה</span><span class="hb-l2">החל מ-<b>24</b> שעות</span></span>
+      <span class="hb-txt"><span class="hb-l1">אספקה והתקנה</span><span class="hb-l2"><b>מיידית</b>, מהמלאי</span></span>
     </div>
-    <div class="eyebrow">WALLUP · חיפוי לקירות ומטבחים</div>
-    <h1>חיפוי קירות ומטבחים, <em>מתוכנן ומותקן</em> עד הפרט האחרון</h1>
-    <p class="lead">סרגלים מחורצים, פלטות עם פסי ניתוק ותאורת לד לסלון, לחדר השינה, למטבח ולעסקים. העבודות שאתם רואים כאן הן עבודות שלנו.</p>
+    <div class="eyebrow">WALLUP · חיפוי קירות</div>
+    <h1>חיפוי קירות שמשנה את הבית, <em>מותקן תוך ימים</em></h1>
+    <p class="lead">סרגלים מחורצים, פלטות ופסי לד לסלון, לחדר השינה ולעסקים. שלחו תמונה של הקיר וקבלו הצעת מחיר בוואטסאפ.</p>
     <div class="hero-ctas">
+      <a class="btn btn-primary wa-link hero-wa" data-msg="היי WallUp, אשמח להצעת מחיר לחיפוי קיר. מצרף תמונה:" href="#contact"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>שלחו תמונה, קבלו מחיר</a>
       <a class="btn hero-tel tel-link" href="#contact" aria-label="התקשרו 053-619-6048"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>התקשרו: <span class="tel-num">053-619-6048</span></a>
-      <a class="btn btn-primary wa-link" data-msg="היי WallUp, אשמח להצעת מחיר לחיפוי קיר. מצרף תמונה:" href="#contact"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>שלחו תמונה של הקיר וקבלו הצעת מחיר</a>
-      <a class="link" href="#work">לתיק העבודות</a>
     </div>
+    <div class="promise"><span>ייעוץ חינם</span><span>דוגמיות עד הבית</span><span>בלי התחייבות</span></div>
+   </div>
     <form class="hero-form lead-form" novalidate aria-label="הצעת מחיר מהירה">
       <div class="hf-step" data-step="1">
         <div class="hf-head"><b>קבלו הצעת <span class="hf-gold">מחיר <span class="hf-fast">מהירה</span></span></b><span class="hf-count">שלב 1 מתוך 2</span></div>
@@ -466,7 +515,7 @@ footer ul a:hover{color:var(--gold-deep)}
         <div class="hf-chips" role="radiogroup" aria-labelledby="hfQ1">
           <label><input type="radio" name="type" value="קיר טלוויזיה בסלון"><span>קיר טלוויזיה</span></label>
           <label><input type="radio" name="type" value="קיר מיטה / חדר שינה"><span>חדר שינה</span></label>
-          <label><input type="radio" name="type" value="מטבח"><span>מטבח</span></label>
+          <label><input type="radio" name="type" value="קיר שלם / מסדרון"><span>קיר שלם</span></label>
           <label><input type="radio" name="type" value="עסק, מלון או משרד"><span>עסק</span></label>
           <label><input type="radio" name="type" value="אחר"><span>אחר</span></label>
         </div>
@@ -483,12 +532,13 @@ footer ul a:hover{color:var(--gold-deep)}
       </div>
       <p class="form-msg" role="status"></p>
     </form>
-    <div class="promise"><span>ייעוץ חינם מתמונה</span><span>דוגמיות עד הבית</span><span>מדידה והתקנה מקצועית</span></div>
   </div>
   <div class="hero-mosaic">
     <figure><img src="img/hidden-door.jpg" alt="קיר סרגלים מחורצים בגוון חול עם דלת נסתרת" width="954" height="1600" fetchpriority="high"><figcaption>דלת נסתרת בקיר סרגלים</figcaption></figure>
     <figure><img src="img/oak-tv.jpg" alt="קיר טלוויזיה מחופה סרגלי אלון עם תאורה ממוקדת" width="1400" height="1050"><figcaption>סרגלי אלון</figcaption></figure>
     <figure><img src="img/bed-wall-2.jpg" alt="קיר מיטה מחופה פלטות וסרגלים עם פסי ניתוק ותאורת מסילה" width="1448" height="1086"><figcaption>קיר מיטה</figcaption></figure>
+    <figure class="m-only"><img src="img/p09.jpg" alt="קיר טלוויזיה עם פלטות, סרגלים ופסי לד אנכיים" width="1200" height="1600" loading="lazy"><figcaption>פסי לד אנכיים</figcaption></figure>
+    <figure class="m-only"><img src="img/p13.jpg" alt="סלון עם קיר סרגלים מאחורי הטלוויזיה" width="1200" height="1600" loading="lazy"><figcaption>קיר סרגלים בסלון</figcaption></figure>
   </div>
 </div></section>
 
@@ -567,7 +617,7 @@ footer ul a:hover{color:var(--gold-deep)}
   <div class="areas-copy">
     <div class="eyebrow">אזורי שירות</div>
     <h2>חיפוי קירות בגוש דן ובמרכז</h2>
-    <p class="lead">WallUp מתקינה חיפוי קירות ומטבחים ב-12 ערים במרכז: מגבעתיים ורמת גן ועד הרצליה וראשון לציון. בחרו את העיר שלכם כדי לראות עבודות, שאלות נפוצות והצעת מחיר לאזור.</p>
+    <p class="lead">WallUp מתקינה חיפוי קירות ב-12 ערים במרכז: מגבעתיים ורמת גן ועד הרצליה וראשון לציון. בחרו את העיר שלכם כדי לראות עבודות, שאלות נפוצות והצעת מחיר לאזור.</p>
     <a class="link wa-link" data-msg="היי WallUp, אני גר באזור אחר. אתם מגיעים גם אליי? מצרף תמונה של הקיר:" href="#contact">לא מצאתם את העיר שלכם? שאלו אותנו</a>
   </div>
   <ul class="cities" aria-label="ערים שבהן אנחנו עובדים">
@@ -601,7 +651,7 @@ footer ul a:hover{color:var(--gold-deep)}
     <div class="grid" id="grid">
       <figure class="tall" data-tags="living"><img src="img/p07.jpg" alt="קיר טלוויזיה: סרגלים ופלטות עם פסי ניתוק שחורים" loading="lazy"><figcaption>סרגלים ופלטות עם פסי ניתוק</figcaption></figure>
       <figure class="tall" data-tags="bed"><img src="img/p08.jpg" alt="חדר שינה מחופה סרגלים מקיר לקיר" loading="lazy"><figcaption>חדר שינה מקיר לקיר</figcaption></figure>
-      <figure class="tall" data-tags="living wood"><img src="img/p19.jpg" alt="עמוד מחופה סרגלי עץ ליד המטבח" loading="lazy"><figcaption>עמוד מחופה ליד המטבח</figcaption></figure>
+      <figure class="tall" data-tags="living wood"><img src="img/p19.jpg" alt="עמוד מחופה סרגלי עץ בחלל פתוח" loading="lazy"><figcaption>עמוד מחופה בסרגלי עץ</figcaption></figure>
       <figure class="tall" data-tags="living"><img src="img/p13.jpg" alt="סלון עם קיר סרגלים מאחורי הטלוויזיה" loading="lazy"><figcaption>סלון בגוון טאופ</figcaption></figure>
       <figure class="tall" data-tags="living"><img src="img/p10.jpg" alt="קיר סרגלים שחור בסלון" loading="lazy"><figcaption>קיר סרגלים שחור</figcaption></figure>
       <figure class="tall" data-tags="bed"><img src="img/p04.jpg" alt="חדר מחופה סרגלים ופלטות עם פסי ניתוק" loading="lazy"><figcaption>חדר עם פסי ניתוק</figcaption></figure>
@@ -630,7 +680,7 @@ footer ul a:hover{color:var(--gold-deep)}
       <div class="field"><label for="qName">שם</label><input id="qName" name="name" autocomplete="name" required></div>
       <div class="field"><label for="qPhone">טלפון</label><input id="qPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" required></div>
     </div>
-    <div class="field"><label for="qType">איזה קיר?</label><select id="qType" name="type"><option>קיר טלוויזיה בסלון</option><option>קיר מיטה / חדר שינה</option><option>מטבח</option><option>עסק, מלון או משרד</option><option>אחר</option></select></div>
+    <div class="field"><label for="qType">איזה קיר?</label><select id="qType" name="type"><option>קיר טלוויזיה בסלון</option><option>קיר מיטה / חדר שינה</option><option>קיר שלם / מסדרון</option><option>עסק, מלון או משרד</option><option>אחר</option></select></div>
     <button class="btn btn-primary" type="submit">קבלו הצעת מחיר בוואטסאפ</button>
     <p class="privacy">הפרטים נשלחים רק אלינו ולא מועברים לאף אחד. <a href="legal/privacy.html">מדיניות הפרטיות</a></p>
     <p class="form-msg" role="status"></p>
@@ -641,25 +691,7 @@ footer ul a:hover{color:var(--gold-deep)}
   <div><div class="eyebrow">מה זה חיפוי קירות</div><h2>מה זה חיפוי קירות, ולמה זה עובד?</h2></div>
   <div class="intro-copy">
     <p class="answer"><strong>חיפוי קירות</strong> הוא שכבה דקורטיבית שמותקנת על קיר קיים ומשנה את המראה של החדר בלי בנייה ובלי טיח. ב-WallUp משלבים פלטות חלקות, סרגלים מחורצים, פסי ניתוק ותאורת לד, ומתאימים כל קיר לחלל שלו.</p>
-    <p>אנחנו מחפים קירות טלוויזיה, קירות מיטה, מסדרונות, עמודים, דלתות נסתרות ומטבחים, ועובדים גם עם עסקים: ברים, אולמות אירועים וחדרי מלון. כל עבודה מתחילה בתמונה של הקיר בוואטסאפ ונגמרת בהתקנה מלאה, כולל פינות וסיומות.</p>
-  </div>
-</div></section>
-
-<section class="block kitchen" id="kitchens"><div class="wrap k-grid">
-  <div class="k-media">
-    <figure><img src="img/web/kitchen-dark.jpg" alt="השראה: מטבח כהה עם חיפוי דמוי שיש בין הארונות" loading="lazy"><span class="tag-insp">השראה</span></figure>
-    <figure><img src="img/web/kitchen-light.jpg" alt="השראה: מטבח בהיר עם חיפוי שיש לבן מאחורי הכיריים" loading="lazy"><span class="tag-insp">השראה</span></figure>
-  </div>
-  <div class="k-copy">
-    <div class="eyebrow">חיפוי מטבחים</div>
-    <h2>חיפוי למטבח: בין הארונות ומאחורי הכיריים</h2>
-    <p class="lead">חיפוי מטבח מחליף את האריחים בין הארונות במשטח רציף ונקי, בגוון שמתאים לשיש ולחזיתות. התמונות כאן הן השראה לסגנון, ועבודות מטבח שלנו נשמח לשלוח בוואטסאפ.</p>
-    <ul class="k-list">
-      <li><b>בין ארונות עליונים לתחתונים</b><span>משטח אחד בלי פוגות, שקל לנקות</span></li>
-      <li><b>מאחורי הכיריים</b><span>חומר שמתאים לאזור חום ואדים</span></li>
-      <li><b>קיר פתוח ליד המטבח</b><span>המשך של אותו חיפוי לסלון או לפינת האוכל</span></li>
-    </ul>
-    <a class="btn btn-primary wa-link" style="align-self:flex-start" data-msg="היי WallUp, אשמח להצעת מחיר לחיפוי מטבח. מצרף תמונה של המטבח:" href="#contact">הצעת מחיר לחיפוי מטבח</a>
+    <p>אנחנו מחפים קירות טלוויזיה, קירות מיטה, מסדרונות, עמודים ודלתות נסתרות, ועובדים גם עם עסקים: ברים, אולמות אירועים וחדרי מלון. כל עבודה מתחילה בתמונה של הקיר בוואטסאפ ונגמרת בהתקנה מלאה, כולל פינות וסיומות.</p>
   </div>
 </div></section>
 
@@ -668,9 +700,9 @@ footer ul a:hover{color:var(--gold-deep)}
     <div><div class="eyebrow">חומרים וגוונים</div><h2>ארבע האבנים של WallUp</h2><p class="lead">ארבעת הגוונים שבלוגו שלנו הם גם ארבע משפחות החיפוי שאנחנו עובדים איתן. לא בטוחים? נביא דוגמיות הביתה.</p></div>
   </div>
   <div class="mats">
-    <div class="mat"><div class="sw"><img src="img/web/marble-black.jpg" alt="דוגמת שיש שחור עם עורקים לבנים" loading="lazy"></div><h3>שיש שחור</h3><p>דרמטי ויוקרתי, לקיר מרכזי, לבר או לחזית אי במטבח.</p><a class="link wa-link" data-msg="היי WallUp, אשמח לדוגמית של חיפוי שיש שחור." href="#contact">הזמינו דוגמית</a></div>
+    <div class="mat"><div class="sw"><img src="img/web/marble-black.jpg" alt="דוגמת שיש שחור עם עורקים לבנים" loading="lazy"></div><h3>שיש שחור</h3><p>דרמטי ויוקרתי, לקיר מרכזי, לבר או לחזית דלפק.</p><a class="link wa-link" data-msg="היי WallUp, אשמח לדוגמית של חיפוי שיש שחור." href="#contact">הזמינו דוגמית</a></div>
     <div class="mat"><div class="sw"><img src="img/web/concrete.jpg" alt="דוגמת בטון אפור בהיר" loading="lazy"></div><h3>בטון אפור</h3><p>שקט ומודרני, משתלב עם ריצוף אפור וחזיתות כהות.</p><a class="link wa-link" data-msg="היי WallUp, אשמח לדוגמית של חיפוי דמוי בטון." href="#contact">הזמינו דוגמית</a></div>
-    <div class="mat"><div class="sw"><img src="img/web/marble-white.jpg" alt="דוגמת שיש לבן" loading="lazy"></div><h3>שיש לבן</h3><p>מאיר ונקי, הבחירה הקלאסית למטבח ולאמבטיה.</p><a class="link wa-link" data-msg="היי WallUp, אשמח לדוגמית של חיפוי שיש לבן." href="#contact">הזמינו דוגמית</a></div>
+    <div class="mat"><div class="sw"><img src="img/web/marble-white.jpg" alt="דוגמת שיש לבן" loading="lazy"></div><h3>שיש לבן</h3><p>מאיר ונקי, מוסיף אור ומרחב לכל חדר.</p><a class="link wa-link" data-msg="היי WallUp, אשמח לדוגמית של חיפוי שיש לבן." href="#contact">הזמינו דוגמית</a></div>
     <div class="mat"><div class="sw"><img src="img/web/gold.jpg" alt="דוגמת גימור זהב" loading="lazy"></div><h3>זהב</h3><p>לפסי ניתוק, פרופילים ופרטים קטנים שנותנים נגיעה חמה.</p><a class="link wa-link" data-msg="היי WallUp, אשמח לשמוע על פרופילים ופסים בגימור זהב." href="#contact">שאלו אותנו</a></div>
   </div>
   <div class="woods">
@@ -728,7 +760,7 @@ footer ul a:hover{color:var(--gold-deep)}
       <thead><tr><th scope="col">סוג החיפוי</th><th scope="col">איך זה נראה</th><th scope="col">מתאים במיוחד ל</th></tr></thead>
       <tbody>
         <tr><th scope="row">סרגלים מחורצים</th><td>קווים אנכיים עם עומק וצל, מראה חם ועשיר</td><td>קיר טלוויזיה, קיר מיטה, עמודים ודלתות נסתרות</td></tr>
-        <tr><th scope="row">פלטות חלקות</th><td>משטח גדול ושקט, עם פסי ניתוק דקים</td><td>קירות ארוכים בסלון ובמסדרון, מטבחים</td></tr>
+        <tr><th scope="row">פלטות חלקות</th><td>משטח גדול ושקט, עם פסי ניתוק דקים</td><td>קירות ארוכים בסלון ובמסדרון</td></tr>
         <tr><th scope="row">שילוב פלטות וסרגלים</th><td>קיר אדריכלי עם קצב, לרוב עם פס ניתוק שחור</td><td>קיר מרכזי בסלון או בחדר השינה</td></tr>
         <tr><th scope="row">חיפוי עם תאורת לד</th><td>פסי אור אנכיים בין הסרגלים</td><td>קיר טלוויזיה, קיר מיטה ועסקים</td></tr>
       </tbody>
@@ -750,12 +782,11 @@ footer ul a:hover{color:var(--gold-deep)}
 <section class="block" id="faq"><div class="wrap faq-grid">
   <div><div class="eyebrow">שאלות נפוצות</div><h2>שאלות נפוצות על חיפוי קירות</h2><a class="link wa-link" data-msg="היי WallUp, יש לי שאלה על חיפוי:" href="#contact">לא מצאתם תשובה? שאלו בוואטסאפ</a></div>
   <div id="faqList">
-    <details open><summary><h3>מה זה חיפוי קירות?</h3></summary><p>חיפוי קירות הוא שכבה דקורטיבית שמותקנת על קיר קיים, בלי לבנות או לטייח מחדש. משתמשים בפלטות חלקות, בסרגלים מחורצים או בשילוב של שניהם, עם פסי ניתוק ותאורת לד. התוצאה היא קיר מעוצב לסלון, לחדר השינה, לקיר טלוויזיה, למטבח או לעסק.</p></details>
+    <details open><summary><h3>מה זה חיפוי קירות?</h3></summary><p>חיפוי קירות הוא שכבה דקורטיבית שמותקנת על קיר קיים, בלי לבנות או לטייח מחדש. משתמשים בפלטות חלקות, בסרגלים מחורצים או בשילוב של שניהם, עם פסי ניתוק ותאורת לד. התוצאה היא קיר מעוצב לסלון, לחדר השינה, לקיר טלוויזיה או לעסק.</p></details>
     <details><summary><h3>על אילו קירות אפשר להתקין חיפוי?</h3></summary><p>על רוב הקירות בבית: גבס, בלוקים וטיח. הקיר צריך להיות יבש וישר יחסית. בביקור המדידה נבדוק את מצב הקיר ונגיד אם צריך הכנה לפני ההתקנה.</p></details>
     <details><summary><h3>מה ההבדל בין פלטה לסרגל מחורץ?</h3></summary><p>פלטה היא משטח גדול וחלק שיוצר קיר שקט ונקי. סרגל מחורץ יוצר קווים אנכיים עם עומק וצל. ברוב העבודות שלנו משלבים את שניהם באותו קיר, עם פס ניתוק שחור ביניהם.</p></details>
     <details><summary><h3>כמה עולה חיפוי קיר?</h3></summary><p>המחיר תלוי בגודל הקיר, בסוג החיפוי, בגוון ובתוספות כמו תאורת לד ופינות. שלחו תמונה ומידות בערך בוואטסאפ ונחזור אליכם עם הערכה. אחרי מדידה בשטח תקבלו הצעת מחיר מסודרת.</p></details>
-    <details><summary><h3>כמה זמן לוקחת התקנת חיפוי?</h3></summary><p>אספקה והתקנה החל מ-24 שעות. משך העבודה המדויק תלוי בגודל הקיר ובכמות הפרטים, כמו פתחים, שקעים ותאורה, ונגיד לכם אותו כבר בהצעת המחיר, אחרי המדידה.</p></details>
-    <details><summary><h3>אפשר לחפות קיר במטבח?</h3></summary><p>כן. אפשר לחפות את הקיר שבין הארונות, את האזור שמאחורי הכיריים ואת הקיר הפתוח שליד המטבח. נתאים חומר שמתאים לאזור רטוב ולאזור חום, וקל לניקוי.</p></details>
+    <details><summary><h3>כמה זמן לוקחת התקנת חיפוי?</h3></summary><p>אספקה והתקנה מיידית, מהמלאי שלנו. משך העבודה המדויק תלוי בגודל הקיר ובכמות הפרטים, כמו פתחים, שקעים ותאורה, ונגיד לכם אותו כבר בהצעת המחיר, אחרי המדידה.</p></details>
     <details><summary><h3>אפשר לשלב תאורת לד בתוך החיפוי?</h3></summary><p>כן. בהרבה מהעבודות שלנו שילבנו פסי לד אנכיים בין הסרגלים או בצד הקיר, בעיקר בקיר טלוויזיה ובקיר מיטה.</p></details>
     <details><summary><h3>עושים חיפוי גם לעסקים?</h3></summary><p>כן. חיפינו בר באולם אירועים וחדר במלון, ואנחנו עובדים גם עם משרדים, חנויות ומסעדות.</p></details>
     <details><summary><h3>אפשר לראות את החומר לפני שמזמינים?</h3></summary><p>כן. אנחנו מביאים דוגמיות כדי שתראו את הגוון והמרקם באור של הבית לפני ההחלטה.</p></details>
@@ -777,7 +808,7 @@ footer ul a:hover{color:var(--gold-deep)}
     <div class="field"><label for="fName">שם</label><input id="fName" name="name" autocomplete="name" required></div>
     <div class="field"><label for="fPhone">טלפון</label><input id="fPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" required></div>
     <div class="field"><label for="fCity">עיר</label><input id="fCity" name="city" autocomplete="address-level2"></div>
-    <div class="field"><label for="fType">איזה קיר?</label><select id="fType" name="type"><option>קיר טלוויזיה בסלון</option><option>קיר מיטה / חדר שינה</option><option>מטבח</option><option>עסק, מלון או משרד</option><option>אחר</option></select></div>
+    <div class="field"><label for="fType">איזה קיר?</label><select id="fType" name="type"><option>קיר טלוויזיה בסלון</option><option>קיר מיטה / חדר שינה</option><option>קיר שלם / מסדרון</option><option>עסק, מלון או משרד</option><option>אחר</option></select></div>
     <div class="field wide"><label for="fMsg">פרטים נוספים</label><textarea id="fMsg" name="msg" rows="3" placeholder="מידות בערך, גוון שאהבתם, עבודה מהתיק שאהבתם"></textarea></div>
     <div class="wide" style="display:flex;flex-direction:column;gap:10px"><button class="btn btn-primary" type="submit">קבלו הצעת מחיר בוואטסאפ</button><p class="privacy">הפרטים נשלחים רק אלינו ולא מועברים לאף אחד. <a href="legal/privacy.html">מדיניות הפרטיות</a></p><p class="form-msg" role="status"></p></div>
   </form>
@@ -785,10 +816,10 @@ footer ul a:hover{color:var(--gold-deep)}
 </main>
 
 <footer lang="he" dir="rtl"><div class="wrap">
-  <div><img class="logo" src="logo.png" alt="WallUp" width="900" height="240"><p class="muted">WallUp, חיפוי לקירות ומטבחים: סרגלים מחורצים, פלטות, פסי ניתוק ותאורת לד. ייעוץ, מדידה והתקנה בגוש דן ובמרכז.</p><p class="muted" style="margin-top:10px">טלפון ווואטסאפ: <span dir="ltr">053-619-6048</span></p></div>
-  <div><h4>חיפוי</h4><ul><li><a href="#work">תיק עבודות</a></li><li><a href="#kitchens">חיפוי מטבחים</a></li><li><a href="#materials">חומרים וגוונים</a></li><li><a href="#system">מערכת חיפוי</a></li></ul></div>
+  <div><img class="logo" src="logo.png" alt="WallUp" width="900" height="240"><p class="muted">WallUp, חיפוי קירות: סרגלים מחורצים, פלטות, פסי ניתוק ותאורת לד. ייעוץ, מדידה והתקנה בגוש דן ובמרכז.</p><p class="muted" style="margin-top:10px">טלפון ווואטסאפ: <span dir="ltr">053-619-6048</span></p></div>
+  <div><h4>חיפוי</h4><ul><li><a href="#work">תיק עבודות</a></li><li><a href="#materials">חומרים וגוונים</a></li><li><a href="#system">מערכת חיפוי</a></li></ul></div>
   <div><h4>WallUp</h4><ul><li><a href="#about">מה זה חיפוי קירות</a></li><li><a href="#process">איך זה עובד</a></li><li><a href="#areas">אזורי שירות</a></li><li><a href="#faq">שאלות נפוצות</a></li><li><a href="#contact">צור קשר</a></li></ul></div>
-  <div class="credits"><span>© 2026 WallUp · חיפוי לקירות ומטבחים · <a href="legal/terms.html">תקנון</a> · <a href="legal/privacy.html">מדיניות פרטיות</a> · <a href="legal/accessibility.html">הצהרת נגישות</a></span><span>תיק העבודות: עבודות של WallUp. תמונות השראה ודוגמאות חומר: Unsplash.</span></div>
+  <div class="credits"><span>© 2026 WallUp · חיפוי קירות · <a href="legal/terms.html">תקנון</a> · <a href="legal/privacy.html">מדיניות פרטיות</a> · <a href="legal/accessibility.html">הצהרת נגישות</a></span><span>כל התמונות באתר הן עבודות של WallUp.</span></div>
 </div></footer>
 
 <div class="mbar" lang="he" dir="rtl">
@@ -799,9 +830,15 @@ footer ul a:hover{color:var(--gold-deep)}
 
 <a class="fab-tel tel-link" href="#contact" aria-label="התקשרו 053-619-6048"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg></a>
 
+<nav class="cbar" lang="he" dir="rtl" aria-label="יצירת קשר מהירה">
+  <a class="cb-form" href="#contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>טופס</a>
+  <a class="cb-tel tel-link" href="#contact" aria-label="התקשרו 053-619-6048"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>חייגו</a>
+  <a class="cb-wa wa-link" data-msg="היי WallUp, אשמח להצעת מחיר לחיפוי קיר. מצרף תמונה:" href="#contact"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>וואטסאפ</a>
+</nav>
+<a class="fab-form" href="#contact" aria-label="לטופס יצירת קשר"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></a>
 <section class="thanks" id="thanks" lang="he" dir="rtl" hidden aria-labelledby="thxTitle">
   <div class="thx-in">
-    <a href="#top" class="thx-logo"><img src="logo.png" alt="WallUp חיפוי לקירות ומטבחים" width="900" height="240"></a>
+    <a href="#top" class="thx-logo"><img src="logo.png" alt="WallUp חיפוי קירות" width="900" height="240"></a>
     <div class="thx-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
     <h2 id="thxTitle">תודה<span id="thxName"></span>! הפרטים מוכנים</h2>
     <p class="thx-lead">נפתחה לכם הודעת וואטסאפ עם כל הפרטים. נשאר רק ללחוץ שם על "שליחה", ואנחנו חוזרים אליכם עם הערכת מחיר.</p>
@@ -828,8 +865,8 @@ footer ul a:hover{color:var(--gold-deep)}
    "@type": "HomeAndConstructionBusiness",
    "@id": "#business",
    "name": "WallUp",
-   "alternateName": "WallUp חיפוי לקירות ומטבחים",
-   "description": "חיפוי קירות ומטבחים לבתים ולעסקים בגוש דן ובמרכז: סרגלים מחורצים, פלטות, פסי ניתוק ותאורת לד. ייעוץ חינם בוואטסאפ, דוגמיות עד הבית, מדידה והתקנה.",
+   "alternateName": "WallUp חיפוי קירות",
+   "description": "חיפוי קירות לבתים ולעסקים בגוש דן ובמרכז: סרגלים מחורצים, פלטות, פסי ניתוק ותאורת לד. ייעוץ חינם בוואטסאפ, דוגמיות עד הבית, מדידה והתקנה.",
    "telephone": "+972-53-619-6048",
    "logo": "logo.png",
    "image": [
@@ -879,13 +916,6 @@ footer ul a:hover{color:var(--gold-deep)}
       "itemOffered": {
        "@type": "Service",
        "name": "חיפוי קיר עם תאורת לד"
-      }
-     },
-     {
-      "@type": "Offer",
-      "itemOffered": {
-       "@type": "Service",
-       "name": "חיפוי מטבחים"
       }
      },
      {
@@ -997,7 +1027,7 @@ footer ul a:hover{color:var(--gold-deep)}
      "name": "מה זה חיפוי קירות?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "חיפוי קירות הוא שכבה דקורטיבית שמותקנת על קיר קיים, בלי לבנות או לטייח מחדש. משתמשים בפלטות חלקות, בסרגלים מחורצים או בשילוב של שניהם, עם פסי ניתוק ותאורת לד. התוצאה היא קיר מעוצב לסלון, לחדר השינה, לקיר טלוויזיה, למטבח או לעסק."
+      "text": "חיפוי קירות הוא שכבה דקורטיבית שמותקנת על קיר קיים, בלי לבנות או לטייח מחדש. משתמשים בפלטות חלקות, בסרגלים מחורצים או בשילוב של שניהם, עם פסי ניתוק ותאורת לד. התוצאה היא קיר מעוצב לסלון, לחדר השינה, לקיר טלוויזיה או לעסק."
      }
     },
     {
@@ -1029,15 +1059,7 @@ footer ul a:hover{color:var(--gold-deep)}
      "name": "כמה זמן לוקחת התקנת חיפוי?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "אספקה והתקנה החל מ-24 שעות. משך העבודה המדויק תלוי בגודל הקיר ובכמות הפרטים, כמו פתחים, שקעים ותאורה, ונגיד לכם אותו כבר בהצעת המחיר, אחרי המדידה."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "אפשר לחפות קיר במטבח?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "כן. אפשר לחפות את הקיר שבין הארונות, את האזור שמאחורי הכיריים ואת הקיר הפתוח שליד המטבח. נתאים חומר שמתאים לאזור רטוב ולאזור חום, וקל לניקוי."
+      "text": "אספקה והתקנה מיידית, מהמלאי שלנו. משך העבודה המדויק תלוי בגודל הקיר ובכמות הפרטים, כמו פתחים, שקעים ותאורה, ונגיד לכם אותו כבר בהצעת המחיר, אחרי המדידה."
      }
     },
     {

@@ -1,0 +1,21 @@
+:root{--paper:#FAF8F5;--stone:#EFEBE5;--ink:#151413;--ink-soft:#5C564F;--line:#E0D9CF;--gold:#BE832E;--gold-deep:#97621D;--wa:#1DA851}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Assistant","Heebo","Segoe UI",Arial,sans-serif;font-size:18px;line-height:1.75;direction:rtl}
+a{color:var(--gold-deep)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.top{position:sticky;top:0;z-index:5;background:rgba(250,248,245,.96);border-bottom:1px solid var(--line)}
+.top .in{max-width:860px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.top img{height:44px;width:auto;display:block}
+.top .back{font-weight:700;text-decoration:none;color:var(--ink);min-height:44px;display:flex;align-items:center}
+main{max-width:860px;margin:0 auto;padding:36px 20px 60px}
+h1{font-family:"Frank Ruhl Libre","David Libre",Georgia,serif;font-weight:500;font-size:clamp(34px,6vw,48px);line-height:1.1;margin:0 0 8px}
+.updated{color:var(--ink-soft);font-size:15px;margin:0 0 28px}
+h2{font-size:22px;margin:34px 0 8px}
+p,li{color:#2B2724}
+ul{padding-inline-start:22px}
+li{margin-bottom:6px}
+.box{background:var(--stone);border-radius:4px;padding:18px 20px;margin:18px 0}
+.box p{margin:4px 0}
+.nav-legal{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:40px;padding-top:18px;border-top:1px solid var(--line);font-size:16px}
+footer{border-top:1px solid var(--line);color:var(--ink-soft);font-size:15px;text-align:center;padding:22px 20px}
