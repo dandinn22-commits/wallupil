@@ -196,7 +196,8 @@ nav.main a:hover{border-color:var(--gold)}
 .proof{background:var(--ink);color:var(--on-ink)}
 .proof .wrap{display:grid;grid-template-columns:repeat(4,1fr);padding-block:26px}
 .proof div{display:flex;flex-direction:column;gap:2px;padding-inline:22px;border-inline-start:1px solid rgba(246,242,236,.14)}
-.proof div:first-child{border:0;padding-inline-start:0}
+.proof div{align-items:center;text-align:center}
+.proof div:first-child{border:0}
 .proof b{font-family:var(--display);font-weight:400;font-size:30px;line-height:1.1;color:#fff}
 .proof span{font-size:14px;color:var(--on-ink-soft)}
 @media (max-width:820px){.proof .wrap{grid-template-columns:1fr 1fr;row-gap:20px}.proof div:nth-child(3){border:0;padding-inline-start:0}}
