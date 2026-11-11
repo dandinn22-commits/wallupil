@@ -1,0 +1,1182 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>WallUp | חיפוי קירות ומטבחים – תיק עבודות, ייעוץ והתקנה</title>
+<meta name="description" content="WallUp – חיפוי קירות ומטבחים בגוש דן ובמרכז: סרגלים מחורצים, פלטות עם פסי ניתוק ותאורת לד לסלון, לחדר השינה, למטבח ולעסקים. ראו את תיק העבודות, שלחו תמונה של הקיר בוואטסאפ וקבלו הצעת מחיר.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="he_IL">
+<meta property="og:site_name" content="WallUp">
+<meta property="og:title" content="WallUp | חיפוי קירות ומטבחים">
+<meta property="og:description" content="תיק עבודות של חיפוי קירות: סרגלים, פלטות ותאורת לד. שלחו תמונה של הקיר וקבלו הצעת מחיר בוואטסאפ.">
+<meta property="og:image" content="img/hidden-door.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700&family=Assistant:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: an architect's portfolio. Big project spreads on warm white, black bands for decisions (CTA), gold only on the one action. RTL. */
+:root{
+  --paper:#FAF8F5;      /* gallery wall */
+  --stone:#EFEBE5;      /* sand panel, the tone of most of the work */
+  --ink:#151413;        /* logo black */
+  --ink-soft:#5C564F;
+  --line:#E0D9CF;
+  --gold:#BE832E;       /* logo gold: reserved for the primary action */
+  --gold-deep:#97621D;
+  --on-ink:#F6F2EC;
+  --on-ink-soft:#ADA59B;
+  --wa:#1DA851;         /* WhatsApp green, a touch deeper than #25D366 so white text stays readable */
+  --wa-deep:#168A42;
+  --display:"Frank Ruhl Libre","David Libre",Georgia,serif;
+  --body:"Assistant","Heebo","Segoe UI",Arial,sans-serif;
+  --r:3px;
+  --wrap:1240px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65;direction:rtl;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--paper)}
+a{color:inherit}
+img{max-width:100%;display:block}
+[hidden]{display:none!important}
+figure{margin:0}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{margin:0;text-wrap:balance}
+h1,h2{font-family:var(--display);font-weight:400;line-height:1.08;letter-spacing:-.01em}
+h3{font-family:var(--body);font-weight:700;line-height:1.3}
+p{margin:0}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.16em;color:var(--gold-deep)}
+.lead{font-size:19px;color:var(--ink-soft);max-width:36em}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* buttons: one primary (gold), everything else quiet */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:700 17px/1.2 var(--body);padding:17px 28px;border-radius:var(--r);text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s;text-align:center}
+.btn svg{width:21px;height:21px;flex:none}
+.btn-primary{background:var(--gold);color:#fff}
+.btn-primary:hover{background:var(--gold-deep)}
+.btn-primary.wa-link,.lead-form .btn-primary{background:var(--wa);color:#fff}
+.btn-primary.wa-link:hover,.lead-form .btn-primary:hover{background:var(--wa-deep)}
+.fab:hover{background:var(--wa-deep)}
+.btn-ghost{border-color:currentColor;background:transparent}
+.btn-ghost:hover{background:var(--ink);color:var(--on-ink);border-color:var(--ink)}
+.link{font-weight:700;text-decoration:none;border-bottom:1.5px solid var(--gold);padding-bottom:2px;align-self:flex-start}
+.link:hover{color:var(--gold-deep)}
+.promise{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:15px;color:var(--ink-soft)}
+.promise span{display:inline-flex;align-items:center;gap:7px}
+.promise span::before{content:"";width:6px;height:6px;background:var(--gold);transform:rotate(45deg)}
+
+/* header */
+header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(250,248,245,.95);backdrop-filter:blur(10px);border-bottom:0}
+/* signature divider: bronze hairline that fades at both ends, broken by the four WallUp stones */
+.sep,header.site::after,.more::before,footer::before{content:"";display:block;height:22px;pointer-events:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 22'%3E%3Crect x='11' y='2.5' width='8' height='8' rx='1.6' fill='%23151413'/%3E%3Crect x='21' y='2.5' width='8' height='8' rx='1.6' fill='%23A39E98'/%3E%3Crect x='11.5' y='12' width='7' height='7' rx='1.4' fill='%23FFFFFF' stroke='%23CFC7BC'/%3E%3Crect x='21' y='11.5' width='8' height='8' rx='1.6' fill='%23B78025'/%3E%3C/svg%3E") center/40px 22px no-repeat,linear-gradient(90deg,transparent 0,rgba(183,128,37,.55) 18%,#B78025 calc(50% - 24px),transparent calc(50% - 24px),transparent calc(50% + 24px),#B78025 calc(50% + 24px),rgba(183,128,37,.55) 82%,transparent 100%) center/100% 1.5px no-repeat}
+header.site::after{position:absolute;left:0;right:0;bottom:-11px}
+.more{position:relative}
+.more::before{position:absolute;left:0;right:0;top:-11px}
+footer{position:relative}
+footer::before{position:absolute;left:0;right:0;top:-11px}
+
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:10px}
+.brand img{height:50px;width:auto}
+nav.main{display:flex;gap:20px;font-weight:600;font-size:15px;white-space:nowrap}
+.brand{flex:none}
+nav.main a{text-decoration:none;padding-block:6px;border-bottom:1.5px solid transparent}
+nav.main a:hover{border-color:var(--gold)}
+.hdr-actions{display:flex;align-items:center;gap:14px}
+.hdr-phone{padding:11px 18px;font-size:15px;border-color:var(--ink);color:var(--ink);background:transparent;white-space:nowrap}
+.hdr-phone:hover{background:var(--ink);color:var(--on-ink)}
+.hdr-phone svg{width:18px;height:18px}
+.hdr-phone-num,.tel-num{direction:ltr;unicode-bidi:isolate}
+.hdr-cta{padding:12px 20px;font-size:15px;white-space:nowrap}
+.hdr-cta svg{width:18px;height:18px}
+.menu-btn{display:none;background:none;border:0;padding:8px;cursor:pointer}
+.menu-btn span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0}
+@media (max-width:1300px){
+  nav.main{display:none;position:absolute;inset:100% 0 auto 0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:6px max(20px,env(safe-area-inset-right,0px)) 14px max(20px,env(safe-area-inset-left,0px))}
+  nav.main.open{display:flex}
+  nav.main a{padding:13px 0;border-bottom:1px solid var(--line)}
+  .menu-btn{display:block}
+}
+@media (max-width:760px){.hdr-phone{padding:10px;width:44px;height:44px}.hdr-phone-num{display:none}}
+@media (max-width:560px){.brand img{height:40px}.hdr-cta{display:none}}
+
+/* hero: the work is the hero */
+.hero{padding-block:44px 88px;position:relative;isolation:isolate;overflow:hidden;background:var(--paper)}
+.hero-bg{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:50% 56%;filter:saturate(1.1) contrast(1.05)}
+/* readable side (right in RTL) gets a soft paper wash; the image shows through on the mosaic side; bottom melts into the black proof strip, top into the header */
+.hero-bg::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(to bottom,rgba(250,248,245,.55) 0,rgba(250,248,245,0) 14%,rgba(21,20,19,0) 74%,rgba(21,20,19,.55) 90%,var(--ink) 100%),
+  linear-gradient(to left,rgba(250,248,245,.72) 0,rgba(250,248,245,.63) 34%,rgba(250,248,245,.27) 56%,rgba(250,248,245,.04) 100%)}
+.hero-grid{position:relative}
+.hero-mosaic figure{box-shadow:0 18px 40px -18px rgba(21,20,19,.45)}
+@media (max-width:960px){
+  .hero-bg img{object-position:72% 40%}
+  .hero-bg::after{background:linear-gradient(to bottom,rgba(250,248,245,.82) 0,rgba(250,248,245,.76) 42%,rgba(250,248,245,.3) 62%,rgba(21,20,19,0) 76%,rgba(21,20,19,.5) 91%,var(--ink) 100%)}
+}
+.hero-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:center}
+.hero-copy{display:flex;flex-direction:column;gap:24px;min-width:0}
+.hero h1{font-size:clamp(40px,5.2vw,76px)}
+.hero h1 em{font-style:normal;color:var(--gold-deep)}
+.hero .lead{color:#3F3A35}
+/* hero text legibility over the photo: soft paper glow behind the copy, crisper type */
+.hero-copy{position:relative}
+.hero-copy::before{content:"";position:absolute;inset:-40px -60px -40px -40px;z-index:-1;background:radial-gradient(closest-side,rgba(250,248,245,.78),rgba(250,248,245,.5) 60%,rgba(250,248,245,0));pointer-events:none}
+.hero .eyebrow{color:#7A5016;font-weight:800;letter-spacing:.18em}
+.hero h1{color:#151413;font-weight:500;line-height:1.04;text-shadow:0 1px 0 rgba(255,255,255,.55),0 0 28px rgba(250,248,245,.65)}
+.hero h1 em{color:#8A5718;text-shadow:0 1px 0 rgba(255,255,255,.5)}
+.hero .lead{color:#2B2724;font-size:20px;font-weight:500;line-height:1.6;text-shadow:0 0 14px rgba(250,248,245,.85)}
+.hero .promise{color:#2B2724;font-weight:600;font-size:15px}
+.hero .promise span::before{background:#9A6420}
+.hero .link{color:#151413}
+@media (max-width:960px){.hero-copy::before{inset:-24px -20px}.hero .lead{font-size:18px}}
+.hero-ctas{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}
+.hero-tel{border-color:var(--ink);color:var(--ink);background:rgba(250,248,245,.75);backdrop-filter:blur(4px)}
+.hero-tel:hover{background:var(--ink);color:var(--on-ink)}
+@media (max-width:560px){.hero-ctas>.btn{width:100%}}
+.hero-mosaic{display:grid;grid-template-columns:1.2fr 1fr;grid-template-rows:1fr 1fr;gap:12px;height:620px;min-width:0}
+.hero-mosaic figure{position:relative;overflow:hidden;border-radius:var(--r);background:var(--stone);cursor:zoom-in}
+.hero-mosaic figure:first-of-type{grid-row:span 2}
+.hero-mosaic img{width:100%;height:100%;object-fit:cover}
+.hero-mosaic figcaption{position:absolute;inset:auto 10px 10px auto;background:rgba(21,20,19,.78);color:var(--on-ink);font-size:13px;font-weight:600;padding:6px 10px;border-radius:var(--r)}
+@media (max-width:960px){
+  .hero-grid{grid-template-columns:1fr;gap:32px}
+  .hero-mosaic{height:auto;grid-template-rows:none;grid-template-columns:1.3fr 1fr;grid-auto-rows:170px}
+}
+@media (max-width:480px){.hero-mosaic{grid-auto-rows:130px}}
+
+
+/* quick lead form inside the hero */
+.hero-form{background:rgba(250,249,246,.94);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:6px;padding:18px 20px;display:flex;flex-direction:column;gap:12px;max-width:600px;box-shadow:0 16px 36px -22px rgba(21,20,19,.45)}
+.hf-step{display:flex;flex-direction:column;gap:12px}
+.hf-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:15px}
+.hf-count{font-size:12px;color:var(--ink-soft);font-weight:700;letter-spacing:.04em;border:1px solid var(--line);background:#fff;border-radius:999px;padding:3px 10px;white-space:nowrap}
+.hf-head{align-items:center;padding-bottom:6px}
+.hf-head b{display:inline-block;font-family:"Assistant","Heebo",Arial,sans-serif;font-size:23px;font-weight:800;line-height:1.2;color:#242424;white-space:nowrap;padding-bottom:10px}
+.hf-gold{color:#B78025}
+.hf-fast{position:relative;display:inline-block}
+.hf-fast::after{content:"";position:absolute;inset:auto -3px -11px -3px;height:12px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 14' preserveAspectRatio='none'%3E%3Cpath d='M3 6C30 4.2 62 2.6 97 1.6' fill='none' stroke='%23B78025' stroke-width='2.4' stroke-linecap='round'/%3E%3Cpath d='M8 12.2C36 10.4 64 9 94 8' fill='none' stroke='%23B78025' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/100% 100%;pointer-events:none}
+.hf-head{flex-wrap:wrap;row-gap:8px}
+@media (max-width:560px){.hf-head b{font-size:19px}.hf-count{font-size:11px;padding:2px 8px}}
+.hf-q{font-weight:700;font-size:17px;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px}
+.hf-chosen{font-weight:600;font-size:15px;color:var(--ink-soft)}
+.hf-chips{display:flex;flex-wrap:wrap;gap:8px}
+.hf-chips label{position:relative}
+.hf-chips input{position:absolute;opacity:0;width:1px;height:1px}
+.hf-chips span{display:inline-block;padding:10px 16px;border:1px solid var(--ink);border-radius:999px;font-weight:600;font-size:15px;cursor:pointer;background:#fff;transition:background .15s,color .15s}
+.hf-chips input:checked+span,.hf-chips span:hover{background:var(--ink);color:var(--on-ink)}
+.hf-chips input:focus-visible+span{outline:2px solid var(--gold);outline-offset:2px}
+.hf-row{display:grid;grid-template-columns:1fr 1fr auto;gap:10px;align-items:end}
+.hf-row .field input{padding:11px 12px}
+.hf-row .btn{padding:13px 18px;font-size:16px;white-space:nowrap}
+.hero-form .btn-primary{background:var(--gold);color:#fff}
+.hero-form .btn-primary:hover{background:var(--gold-deep)}
+.hf-back{background:none;border:0;color:var(--gold-deep);font:700 14px var(--body);cursor:pointer;padding:0;text-decoration:underline}
+.hero-form .privacy{text-align:right}
+@media (max-width:560px){.hf-row{grid-template-columns:1fr}.hf-row .btn{width:100%}.hero-form{padding:16px}}
+.hero-mosaic{position:relative}
+.hero-badge{position:relative;z-index:3;align-self:flex-start;margin-bottom:4px;display:inline-flex;align-items:center;gap:10px;background:rgba(250,248,245,.88);border:1px solid var(--gold);outline:1px solid rgba(190,131,46,.35);outline-offset:3px;border-radius:2px;padding:9px 16px;animation:hbIn .6s ease .2s both}
+.hb-ic{display:flex;color:var(--gold-deep)}
+.hb-ic svg{width:19px;height:19px}
+.hb-txt{display:flex;align-items:baseline;gap:6px;white-space:nowrap;line-height:1.2}
+.hb-l1,.hb-l2{font-size:15px;font-weight:700;color:var(--ink);letter-spacing:.01em}
+.hb-l2 b{font-family:var(--display);font-weight:500;font-size:21px;color:var(--gold-deep);line-height:1}
+@keyframes hbIn{from{opacity:0;transform:translateY(8px) scale(.96)}to{opacity:1;transform:none}}
+@media (max-width:480px){.hero-badge{padding:8px 12px;gap:8px}.hb-l1,.hb-l2{font-size:14px}.hb-l2 b{font-size:19px}}
+/* proof strip */
+.proof{background:var(--ink);color:var(--on-ink)}
+.proof .wrap{display:grid;grid-template-columns:repeat(4,1fr);padding-block:26px}
+.proof div{display:flex;flex-direction:column;gap:2px;padding-inline:22px;border-inline-start:1px solid rgba(246,242,236,.14)}
+.proof div:first-child{border:0;padding-inline-start:0}
+.proof b{font-family:var(--display);font-weight:400;font-size:30px;line-height:1.1;color:#fff}
+.proof span{font-size:14px;color:var(--on-ink-soft)}
+@media (max-width:820px){.proof .wrap{grid-template-columns:1fr 1fr;row-gap:20px}.proof div:nth-child(3){border:0;padding-inline-start:0}}
+
+/* sections */
+section.block{padding-block:104px}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:28px;flex-wrap:wrap;margin-bottom:52px}
+.sec-head>div{display:flex;flex-direction:column;gap:14px;max-width:700px;min-width:0}
+.sec-head h2{font-size:clamp(34px,4.2vw,56px)}
+@media (max-width:700px){section.block{padding-block:68px}.sec-head{margin-bottom:34px}}
+
+/* portfolio: project spreads */
+.projects{display:flex;flex-direction:column;gap:96px}
+.project{display:grid;grid-template-columns:1.35fr 1fr;gap:52px;align-items:center}
+.project.flip{grid-template-columns:1fr 1.35fr}
+.project.flip .p-media{order:2}
+.p-media{position:relative;overflow:hidden;border-radius:var(--r);background:var(--stone);aspect-ratio:4/5;max-width:100%;cursor:zoom-in}
+.p-media.land{aspect-ratio:4/3}
+.p-media img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.p-media:hover img{transform:scale(1.025)}
+.p-copy{display:flex;flex-direction:column;gap:18px;min-width:0}
+.p-type{font-size:13px;font-weight:700;letter-spacing:.14em;color:var(--gold-deep)}
+.p-copy h3{font-family:var(--display);font-weight:400;font-size:clamp(30px,3.2vw,44px);line-height:1.1}
+.p-copy p{color:var(--ink-soft);font-size:18px;max-width:34em}
+.scope{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.scope li{font-size:14px;font-weight:600;border:1px solid var(--line);background:#fff;padding:6px 12px;border-radius:999px}
+@media (max-width:900px){.project,.project.flip{grid-template-columns:1fr;gap:24px}.project.flip .p-media{order:0}.projects{gap:64px}}
+
+/* more work + filters */
+.more{padding-top:0}
+.more::before{display:none}
+.more-sec{padding-top:88px}
+.more-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:26px}
+.more-head h3{font-family:var(--display);font-weight:400;font-size:34px}
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.filters button{font:600 15px var(--body);color:var(--ink);background:transparent;border:1px solid var(--line);padding:9px 16px;border-radius:999px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--on-ink);border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;grid-auto-flow:dense;gap:12px}
+.grid figure{position:relative;overflow:hidden;border-radius:var(--r);background:var(--stone);cursor:zoom-in;min-width:0}
+.grid figure.tall{grid-row:span 2}
+.grid figure.wide{grid-column:span 2;grid-row:span 2}
+.grid img{width:100%;height:100%;object-fit:cover}
+.grid figcaption{position:absolute;inset:auto 0 0 0;padding:30px 12px 10px;background:linear-gradient(to top,rgba(0,0,0,.62),transparent);color:#fff;font-size:14px;font-weight:600}
+@media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px}}
+@media (max-width:480px){.grid{grid-auto-rows:140px;gap:8px}.grid figcaption{font-size:12px;padding:24px 8px 8px}}
+
+/* mid CTA with short form, right after the work */
+.cta-band{background:var(--ink);color:var(--on-ink)}
+.cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.cta-band h2{font-size:clamp(34px,4.2vw,56px);margin-block:14px 18px}
+.cta-band .lead{color:var(--on-ink-soft)}
+.cta-band .promise{color:var(--on-ink-soft);margin-top:22px}
+.cta-band .eyebrow{color:var(--gold)}
+form.quick{background:var(--paper);color:var(--ink);border-radius:var(--r);padding:30px;display:flex;flex-direction:column;gap:16px}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.field label{font-size:14px;font-weight:700}
+.field input,.field select,.field textarea{font:inherit;font-size:16px;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:13px 14px;width:100%}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(190,131,46,.2)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.privacy{font-size:13px;color:var(--ink-soft);text-align:center}
+.privacy a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.form-msg{font-size:15px;font-weight:600;color:var(--wa)}
+.form-msg:empty{display:none}
+.form-msg.err{color:#B3261E}
+@media (max-width:900px){.cta-grid{grid-template-columns:1fr;gap:36px}}
+@media (max-width:460px){.row2{grid-template-columns:1fr}form.quick{padding:22px}}
+
+/* answer-first intro */
+.intro-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px}
+.intro h2{font-size:clamp(32px,3.8vw,48px);margin-top:14px}
+.intro-copy{display:flex;flex-direction:column;gap:16px;max-width:62ch;color:var(--ink-soft);font-size:18px}
+.intro-copy .answer{color:var(--ink);font-size:21px;line-height:1.6}
+@media (max-width:900px){.intro-grid{grid-template-columns:1fr;gap:20px}}
+
+/* kitchens */
+.kitchen{background:var(--stone)}
+.k-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:center}
+.k-media{display:grid;gap:12px;min-width:0}
+.k-media figure{position:relative;overflow:hidden;border-radius:var(--r)}
+.k-media img{width:100%;object-fit:cover;aspect-ratio:16/10}
+.k-media figure:last-child img{aspect-ratio:21/9}
+.tag-insp{position:absolute;top:10px;right:10px;background:rgba(250,248,245,.92);color:var(--ink);font-size:12px;font-weight:700;letter-spacing:.06em;padding:5px 10px;border-radius:var(--r)}
+.k-copy{display:flex;flex-direction:column;gap:18px;min-width:0}
+.k-copy h2{font-size:clamp(34px,4vw,52px)}
+.k-list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+.k-list li{padding:14px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column}
+.k-list b{font-size:17px}
+.k-list span{color:var(--ink-soft);font-size:16px}
+@media (max-width:900px){.k-grid{grid-template-columns:1fr;gap:32px}}
+
+/* materials: the four stones of the logo */
+.mats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.mat{display:flex;flex-direction:column;gap:12px;min-width:0}
+.mat .sw{aspect-ratio:3/4;max-width:100%;border-radius:14px;overflow:hidden;background:var(--stone);box-shadow:inset 0 0 0 1px rgba(0,0,0,.06)}
+.mat .sw img{width:100%;height:100%;object-fit:cover}
+.mat .sw img[src*="gold"]{filter:saturate(.7) brightness(.92)}
+.mat h3{font-family:var(--display);font-weight:400;font-size:26px}
+.mat p{color:var(--ink-soft);font-size:15px}
+.mat .link{font-size:15px}
+.woods{margin-top:34px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px;font-size:16px;color:var(--ink-soft)}
+.woods b{color:var(--ink)}
+.dot{display:inline-block;width:16px;height:16px;border-radius:50%;vertical-align:-3px;margin-inline-end:6px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.12)}
+@media (max-width:900px){.mats{grid-template-columns:1fr 1fr}}
+
+/* system + comparison */
+.sys-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:center}
+.sys-grid h2{font-size:clamp(32px,3.8vw,48px);margin-block:14px 16px}
+.sys-list{list-style:none;padding:0;margin:26px 0 0;border-top:1px solid var(--line)}
+.sys-list li{display:grid;grid-template-columns:140px 1fr;gap:18px;padding:15px 0;border-bottom:1px solid var(--line)}
+.sys-list span{color:var(--ink-soft);font-size:16px}
+.sys-figure{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px;overflow-x:auto}
+.sys-figure svg{width:100%;min-width:420px;height:auto;display:block}
+.cmp-wrap{overflow-x:auto;margin-top:64px}
+.cmp{width:100%;min-width:600px;border-collapse:collapse;font-size:16px;background:#fff;border:1px solid var(--line)}
+.cmp caption{text-align:right;font-family:var(--display);font-size:28px;padding-bottom:16px}
+.cmp th,.cmp td{padding:14px 16px;text-align:right;border-bottom:1px solid var(--line);vertical-align:top}
+.cmp thead th{background:var(--ink);color:var(--on-ink)}
+.cmp tbody th{width:22%}
+.cmp td{color:var(--ink-soft)}
+@media (max-width:900px){.sys-grid{grid-template-columns:1fr;gap:34px}.sys-list li{grid-template-columns:1fr;gap:2px}}
+
+/* process */
+.process{background:var(--stone)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink);counter-reset:s}
+.step{padding:28px 24px 6px 24px;border-inline-start:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
+.step:first-child{border:0;padding-inline-start:0}
+.step::before{counter-increment:s;content:counter(s);font-family:var(--display);font-size:52px;line-height:1;color:var(--gold-deep)}
+.step h3{font-size:20px}
+.step p{color:var(--ink-soft);font-size:16px}
+.process .after{margin-top:44px;display:flex;flex-wrap:wrap;align-items:center;gap:22px}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr;row-gap:22px}.step:nth-child(3){border:0;padding-inline-start:0}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}.step{border:0;padding-inline:0;border-bottom:1px solid var(--line);padding-bottom:20px}}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
+.faq-grid>div:first-child{display:flex;flex-direction:column;gap:14px}
+.faq-grid h2{font-size:clamp(32px,3.8vw,48px)}
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:20px 0;display:flex;justify-content:space-between;align-items:center;gap:20px}
+summary::-webkit-details-marker{display:none}
+summary h3{font-size:18px}
+summary::after{content:"+";font-family:var(--display);font-size:30px;line-height:1;color:var(--gold-deep);transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 0 22px;color:var(--ink-soft);max-width:62ch}
+@media (max-width:900px){.faq-grid{grid-template-columns:1fr;gap:24px}}
+
+
+/* service areas */
+.areas{background:var(--stone)}
+.areas-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.areas-copy{display:flex;flex-direction:column;gap:16px;min-width:0}
+.areas h2{font-size:clamp(32px,3.8vw,48px)}
+.cities{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.city{display:flex;align-items:center;gap:10px;padding:14px 16px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);text-decoration:none;font-weight:700;font-size:17px;transition:border-color .2s,background .2s}
+.city svg{width:18px;height:18px;flex:none;color:var(--gold-deep)}
+.city:hover{border-color:var(--gold);background:#fff}
+@media (max-width:900px){.areas-grid{grid-template-columns:1fr;gap:28px}}
+@media (max-width:520px){.cities{grid-template-columns:1fr 1fr}.city{padding:12px;font-size:16px}}
+/* final contact */
+.contact{background:var(--ink);color:var(--on-ink)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.contact h2{font-size:clamp(36px,4.6vw,62px);margin-block:14px 18px}
+.contact .eyebrow{color:var(--gold)}
+.contact .lead{color:var(--on-ink-soft)}
+.ways{display:flex;flex-direction:column;gap:14px;margin-top:30px;align-items:flex-start}
+.ways .num{font-family:var(--display);font-size:34px;direction:ltr;color:#fff;user-select:all;text-decoration:none}
+form.full{background:var(--paper);color:var(--ink);border-radius:var(--r);padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+form.full .wide{grid-column:1/-1}
+@media (max-width:900px){.contact-grid{grid-template-columns:1fr;gap:40px}}
+@media (max-width:520px){form.full{grid-template-columns:1fr;padding:22px}}
+
+/* footer */
+footer{background:var(--paper)}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-block:52px 28px}
+footer img.logo{height:52px;width:auto;margin-bottom:14px}
+footer h4{font-size:13px;letter-spacing:.14em;margin:0 0 12px;color:var(--gold-deep)}
+footer ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px}
+footer ul a{text-decoration:none}
+footer ul a:hover{color:var(--gold-deep)}
+.muted{color:var(--ink-soft);font-size:15px;max-width:30em}
+.credits{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18px;font-size:13px;color:var(--ink-soft);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+@media (max-width:760px){footer .wrap{grid-template-columns:1fr}}
+
+/* mobile action bar + desktop whatsapp */
+.mbar{display:none}
+@media (max-width:760px){
+  .mbar{display:grid;grid-template-columns:1fr 1.5fr;position:fixed;inset:auto 0 0 0;z-index:70;background:var(--paper);border-top:1px solid var(--line);gap:10px;padding:10px max(14px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(14px,env(safe-area-inset-left,0px))}
+  .mbar .btn{padding:14px 10px;font-size:16px}
+  body{padding-bottom:80px}
+}
+.fab{position:fixed;left:calc(22px + env(safe-area-inset-left,0px));bottom:calc(22px + env(safe-area-inset-bottom,0px));z-index:70;display:flex;align-items:center;gap:10px;background:var(--wa);color:#fff;text-decoration:none;font-weight:700;padding:13px 20px 13px 16px;border-radius:999px;box-shadow:0 10px 26px rgba(0,0,0,.2)}
+.fab svg{width:24px;height:24px}
+@media (max-width:760px){.fab{display:none}}
+.fab-tel{position:fixed;left:calc(22px + env(safe-area-inset-left,0px));bottom:calc(92px + env(safe-area-inset-bottom,0px));z-index:70;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--ink);color:#fff;box-shadow:0 0 0 3px var(--gold),0 10px 26px rgba(0,0,0,.22);transition:transform .2s,background .2s}
+.fab-tel:hover{transform:scale(1.06);background:#2a2826}
+.fab-tel svg{width:24px;height:24px}
+@media (max-width:760px){.fab-tel{left:calc(16px + env(safe-area-inset-left,0px));bottom:calc(90px + env(safe-area-inset-bottom,0px));width:52px;height:52px}}
+
+
+/* thank-you page (shown at #thanks after a form is sent) */
+.thanks{position:fixed;inset:0;z-index:95;background:var(--paper);overflow-y:auto;padding:calc(32px + env(safe-area-inset-top,0px)) max(20px,env(safe-area-inset-right,0px)) calc(40px + env(safe-area-inset-bottom,0px)) max(20px,env(safe-area-inset-left,0px))}
+.thx-in{max-width:620px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center;gap:22px}
+.thx-logo img{height:56px;width:auto}
+.thx-check{width:72px;height:72px;border-radius:50%;background:var(--wa);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 8px rgba(29,168,81,.12)}
+.thx-check svg{width:36px;height:36px}
+.thanks h2{font-family:var(--display);font-weight:400;font-size:clamp(34px,5vw,52px);line-height:1.1}
+.thx-lead{font-size:19px;color:var(--ink-soft);max-width:32em}
+.thx-steps{list-style:none;counter-reset:t;padding:0;margin:0;width:100%;text-align:right;border-top:1px solid var(--line)}
+.thx-steps li{counter-increment:t;display:grid;grid-template-columns:44px 1fr;column-gap:12px;padding:16px 0;border-bottom:1px solid var(--line)}
+.thx-steps li::before{content:counter(t);grid-row:span 2;font-family:var(--display);font-size:34px;line-height:1;color:var(--gold-deep)}
+.thx-steps b{font-size:17px}
+.thx-steps span{color:var(--ink-soft);font-size:16px}
+.thx-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;width:100%}
+.thx-actions .btn svg{width:20px;height:20px}
+.thx-actions .btn-ghost{color:var(--ink)}
+.thx-wa{background:var(--wa)!important}
+.thx-wa:hover{background:var(--wa-deep)!important}
+.thx-back{align-self:center}
+@media (max-width:560px){.thx-actions .btn{width:100%}}
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:90;background:rgba(10,10,10,.93);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:max(20px,env(safe-area-inset-top,0px)) max(20px,env(safe-area-inset-right,0px)) max(20px,env(safe-area-inset-bottom,0px)) max(20px,env(safe-area-inset-left,0px))}
+.lb img{max-height:80vh;max-width:100%;border-radius:var(--r)}
+.lb p{color:#fff;font-weight:600;text-align:center}
+.lb .close{position:absolute;top:calc(16px + env(safe-area-inset-top,0px));left:calc(16px + env(safe-area-inset-left,0px));background:var(--paper);border:0;width:44px;height:44px;border-radius:50%;font-size:22px;cursor:pointer;color:var(--ink)}
+</style>
+</head>
+<body>
+<header class="site" lang="he" dir="rtl"><div class="wrap">
+  <a class="brand" href="#top" aria-label="WallUp, לראש העמוד"><img src="logo.png" alt="WallUp חיפוי לקירות ומטבחים" width="900" height="240"></a>
+  <nav class="main" id="nav" aria-label="ניווט ראשי">
+    <a href="#work">תיק עבודות</a>
+    <a href="#kitchens">חיפוי מטבחים</a>
+    <a href="#materials">חומרים וגוונים</a>
+    <a href="#process">איך זה עובד</a>
+    <a href="#areas">אזורי שירות</a>
+    <a href="#faq">שאלות נפוצות</a>
+  </nav>
+  <div class="hdr-actions">
+    <a class="btn hdr-phone tel-link" href="#contact" aria-label="התקשרו 053-619-6048"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg><span class="hdr-phone-num">053-619-6048</span></a>
+    <a class="btn btn-primary hdr-cta wa-link" data-msg="היי WallUp, אשמח להצעת מחיר לחיפוי קיר. מצרף תמונה:" href="#contact"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>הצעת מחיר בוואטסאפ</a>
+    <button class="menu-btn" id="menuBtn" aria-label="תפריט" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
+</div></header>
+
+<main id="top" lang="he" dir="rtl">
+
+<section class="hero">
+  <picture class="hero-bg" aria-hidden="true">
+    <source media="(max-width:760px)" srcset="img/hero-kitchen-m.webp" type="image/webp">
+    <source srcset="img/hero-kitchen.webp" type="image/webp">
+    <img src="img/hero-kitchen.jpg" alt="" width="1122" height="1402" fetchpriority="high" decoding="async">
+  </picture>
+  <div class="wrap hero-grid">
+  <div class="hero-copy">
+    <div class="hero-badge" role="note">
+      <span class="hb-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M10 2h4M12 2v3"/></svg></span>
+      <span class="hb-txt"><span class="hb-l1">אספקה והתקנה</span><span class="hb-l2">החל מ-<b>24</b> שעות</span></span>
+    </div>
+    <div class="eyebrow">WALLUP · חיפוי לקירות ומטבחים</div>
+    <h1>חיפוי קירות ומטבחים, <em>מתוכנן ומותקן</em> עד הפרט האחרון</h1>
+    <p class="lead">סרגלים מחורצים, פלטות עם פסי ניתוק ותאורת לד לסלון, לחדר השינה, למטבח ולעסקים. העבודות שאתם רואים כאן הן עבודות שלנו.</p>
+    <div class="hero-ctas">
+      <a class="btn hero-tel tel-link" href="#contact" aria-label="התקשרו 053-619-6048"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>התקשרו: <span class="tel-num">053-619-6048</span></a>
+      <a class="btn btn-primary wa-link" data-msg="היי WallUp, אשמח להצעת מחיר לחיפוי קיר. מצרף תמונה:" href="#contact"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>שלחו תמונה של הקיר וקבלו הצעת מחיר</a>
+      <a class="link" href="#work">לתיק העבודות</a>
+    </div>
+    <form class="hero-form lead-form" novalidate aria-label="הצעת מחיר מהירה">
+      <div class="hf-step" data-step="1">
+        <div class="hf-head"><b>קבלו הצעת <span class="hf-gold">מחיר <span class="hf-fast">מהירה</span></span></b><span class="hf-count">שלב 1 מתוך 2</span></div>
+        <p class="hf-q" id="hfQ1">איזה קיר תרצו לחפות?</p>
+        <div class="hf-chips" role="radiogroup" aria-labelledby="hfQ1">
+          <label><input type="radio" name="type" value="קיר טלוויזיה בסלון"><span>קיר טלוויזיה</span></label>
+          <label><input type="radio" name="type" value="קיר מיטה / חדר שינה"><span>חדר שינה</span></label>
+          <label><input type="radio" name="type" value="מטבח"><span>מטבח</span></label>
+          <label><input type="radio" name="type" value="עסק, מלון או משרד"><span>עסק</span></label>
+          <label><input type="radio" name="type" value="אחר"><span>אחר</span></label>
+        </div>
+      </div>
+      <div class="hf-step" data-step="2" hidden>
+        <div class="hf-head"><b>קבלו הצעת <span class="hf-gold">מחיר <span class="hf-fast">מהירה</span></span></b><span class="hf-count">שלב 2 מתוך 2</span></div>
+        <p class="hf-q">לאן לשלוח את ההצעה? <span class="hf-chosen"></span> <button type="button" class="hf-back">שינוי</button></p>
+        <div class="hf-row">
+          <div class="field"><label for="hName">שם</label><input id="hName" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="hPhone">טלפון</label><input id="hPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" required></div>
+          <button class="btn btn-primary" type="submit">שלחו לי הצעת מחיר</button>
+        </div>
+        <p class="privacy">ייעוץ חינם, בלי התחייבות. הפרטים נשלחים רק אלינו. <a href="legal/privacy.html">מדיניות הפרטיות</a></p>
+      </div>
+      <p class="form-msg" role="status"></p>
+    </form>
+    <div class="promise"><span>ייעוץ חינם מתמונה</span><span>דוגמיות עד הבית</span><span>מדידה והתקנה מקצועית</span></div>
+  </div>
+  <div class="hero-mosaic">
+    <figure><img src="img/hidden-door.jpg" alt="קיר סרגלים מחורצים בגוון חול עם דלת נסתרת" width="954" height="1600" fetchpriority="high"><figcaption>דלת נסתרת בקיר סרגלים</figcaption></figure>
+    <figure><img src="img/oak-tv.jpg" alt="קיר טלוויזיה מחופה סרגלי אלון עם תאורה ממוקדת" width="1400" height="1050"><figcaption>סרגלי אלון</figcaption></figure>
+    <figure><img src="img/bed-wall-2.jpg" alt="קיר מיטה מחופה פלטות וסרגלים עם פסי ניתוק ותאורת מסילה" width="1448" height="1086"><figcaption>קיר מיטה</figcaption></figure>
+  </div>
+</div></section>
+
+<section class="proof" aria-label="WallUp בקצרה"><div class="wrap">
+  <div><b>20</b><span>עבודות בתיק העבודות</span></div>
+  <div><b>בתים ועסקים</b><span>דירות, מלון ובר אירועים</span></div>
+  <div><b>ייעוץ חינם</b><span>שולחים תמונה בוואטסאפ</span></div>
+  <div><b>דוגמיות</b><span>רואים את הגוון בבית</span></div>
+</div></section>
+
+<section class="block" id="work"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="eyebrow">תיק עבודות</div><h2>עבודות חיפוי קירות שביצענו</h2><p class="lead">כל קיר מתוכנן לפי החלל שלו: האור, הרהיטים והאופן שבו משתמשים בחדר. אלה כמה מהעבודות שלנו.</p></div>
+  </div>
+
+  <div class="projects">
+    <article class="project">
+      <figure class="p-media"><img src="img/hidden-door.jpg" alt="קיר סרגלים מחורצים בגוון חול עם דלת נסתרת בסלון" loading="lazy"></figure>
+      <div class="p-copy">
+        <div class="p-type">סלון · דירה</div>
+        <h3>קיר סרגלים עם דלת נסתרת</h3>
+        <p>חיפינו את כל הקיר בסרגלים מחורצים בגוון חול, והמשכנו את הסרגלים גם על הדלת לחדר הצמוד. כשהדלת סגורה רואים רק קו דק בתוך הקיר.</p>
+        <ul class="scope"><li>סרגלים מחורצים</li><li>דלת נסתרת</li><li>מהרצפה עד התקרה</li></ul>
+        <a class="link wa-link" data-msg="היי WallUp, ראיתי באתר את קיר הסרגלים עם הדלת הנסתרת. אשמח להצעת מחיר לקיר כזה:" href="#contact">רוצים קיר כזה? שלחו תמונה</a>
+      </div>
+    </article>
+
+    <article class="project flip">
+      <figure class="p-media land"><img src="img/oak-tv.jpg" alt="קיר טלוויזיה מחופה סרגלי אלון עם תאורה ממוקדת" loading="lazy"></figure>
+      <div class="p-copy">
+        <div class="p-type">קיר טלוויזיה · סלון</div>
+        <h3>קיר טלוויזיה בסרגלי אלון</h3>
+        <p>קיר שלם בסרגלי אלון חמים, עם תאורה ממוקדת מהתקרה שמדגישה את העומק של החריצים. הטלוויזיה תלויה ישר על החיפוי.</p>
+        <ul class="scope"><li>סרגלי עץ אלון</li><li>קיר מלא</li><li>תאורה ממוקדת</li></ul>
+        <a class="link wa-link" data-msg="היי WallUp, ראיתי באתר את קיר הטלוויזיה בסרגלי אלון. אשמח להצעת מחיר:" href="#contact">רוצים קיר כזה? שלחו תמונה</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <figure class="p-media"><img src="img/p16.jpg" alt="חדר מלון מול הים עם קיר סרגלים בגוון אגוז מאחורי הטלוויזיה" loading="lazy"></figure>
+      <div class="p-copy">
+        <div class="p-type">מלון · עסקים</div>
+        <h3>חדר מלון מול הים</h3>
+        <p>בחדר מלון חיפינו את קיר הטלוויזיה בסרגלים בגוון אגוז. הגוון הכהה יוצר עוגן בחדר ומשאיר את הנוף לים במרכז.</p>
+        <ul class="scope"><li>סרגלי אגוז</li><li>חדר מלון</li></ul>
+        <a class="link wa-link" data-msg="היי WallUp, אני מעוניין בחיפוי לעסק (מלון/משרד/מסעדה). אשמח לפרטים:" href="#contact">חיפוי לעסק? דברו איתנו</a>
+      </div>
+    </article>
+
+    <article class="project flip">
+      <figure class="p-media land"><img src="img/p01.jpg" alt="בר ארוך באולם אירועים מחופה סרגלים שחורים" loading="lazy"></figure>
+      <div class="p-copy">
+        <div class="p-type">אולם אירועים · עסקים</div>
+        <h3>בר שחור באולם אירועים</h3>
+        <p>חזית בר ארוכה שחיפינו בסרגלים שחורים, עם פס סיום בבסיס. החיפוי הכהה משתלב עם קיר הלבנים ועם משטח העץ של הבר.</p>
+        <ul class="scope"><li>סרגלים שחורים</li><li>חזית בר</li><li>סיומת תחתונה</li></ul>
+        <a class="link wa-link" data-msg="היי WallUp, אני מעוניין בחיפוי לעסק (בר/אולם/מסעדה). אשמח לפרטים:" href="#contact">חיפוי לעסק? דברו איתנו</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <figure class="p-media"><img src="img/p09.jpg" alt="קיר טלוויזיה עם פלטות וסרגלים ופסי תאורת לד אנכיים" loading="lazy"></figure>
+      <div class="p-copy">
+        <div class="p-type">קיר טלוויזיה · תאורה</div>
+        <h3>קיר עם פסי לד אנכיים</h3>
+        <p>שילוב של פלטות חלקות וסרגלים, עם פסי לד שיורדים מהתקרה עד הרצפה בשני צדי הקיר. בערב הקיר הופך למקור האור העיקרי בסלון.</p>
+        <ul class="scope"><li>פלטות וסרגלים</li><li>תאורת לד</li><li>פס ניתוק שחור</li></ul>
+        <a class="link wa-link" data-msg="היי WallUp, ראיתי באתר את הקיר עם פסי הלד. אשמח להצעת מחיר לקיר כזה:" href="#contact">רוצים קיר כזה? שלחו תמונה</a>
+      </div>
+    </article>
+  </div>
+
+</div></section>
+
+<section class="block areas" id="areas"><div class="wrap areas-grid">
+  <div class="areas-copy">
+    <div class="eyebrow">אזורי שירות</div>
+    <h2>חיפוי קירות בגוש דן ובמרכז</h2>
+    <p class="lead">WallUp מתקינה חיפוי קירות ומטבחים ב-12 ערים במרכז: מגבעתיים ורמת גן ועד הרצליה וראשון לציון. בחרו את העיר שלכם כדי לראות עבודות, שאלות נפוצות והצעת מחיר לאזור.</p>
+    <a class="link wa-link" data-msg="היי WallUp, אני גר באזור אחר. אתם מגיעים גם אליי? מצרף תמונה של הקיר:" href="#contact">לא מצאתם את העיר שלכם? שאלו אותנו</a>
+  </div>
+  <ul class="cities" aria-label="ערים שבהן אנחנו עובדים">
+      <li><a class="city" href="areas/givatayim.html" title="חיפוי קירות בגבעתיים"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>גבעתיים</span></a></li>
+      <li><a class="city" href="areas/ramat-gan.html" title="חיפוי קירות ברמת גן"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>רמת גן</span></a></li>
+      <li><a class="city" href="areas/bnei-brak.html" title="חיפוי קירות בבני ברק"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>בני ברק</span></a></li>
+      <li><a class="city" href="areas/petah-tikva.html" title="חיפוי קירות בפתח תקווה"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>פתח תקווה</span></a></li>
+      <li><a class="city" href="areas/tel-aviv.html" title="חיפוי קירות בתל אביב"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>תל אביב</span></a></li>
+      <li><a class="city" href="areas/kiryat-ono.html" title="חיפוי קירות בקריית אונו"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>קריית אונו</span></a></li>
+      <li><a class="city" href="areas/givat-shmuel.html" title="חיפוי קירות בגבעת שמואל"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>גבעת שמואל</span></a></li>
+      <li><a class="city" href="areas/herzliya.html" title="חיפוי קירות בהרצליה"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>הרצליה</span></a></li>
+      <li><a class="city" href="areas/hod-hasharon.html" title="חיפוי קירות בהוד השרון"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>הוד השרון</span></a></li>
+      <li><a class="city" href="areas/holon.html" title="חיפוי קירות בחולון"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>חולון</span></a></li>
+      <li><a class="city" href="areas/bat-yam.html" title="חיפוי קירות בבת ים"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>בת ים</span></a></li>
+      <li><a class="city" href="areas/rishon-lezion.html" title="חיפוי קירות בראשון לציון"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>ראשון לציון</span></a></li>
+  </ul>
+</div></section>
+
+<section class="block more-sec"><div class="wrap">
+  <div class="more" id="more">
+    <div class="more-head">
+      <h3>עוד מהעבודות שלנו</h3>
+      <div class="filters" role="group" aria-label="סינון עבודות">
+        <button aria-pressed="true" data-f="all">הכל</button>
+        <button aria-pressed="false" data-f="living">סלון וקיר טלוויזיה</button>
+        <button aria-pressed="false" data-f="bed">חדרי שינה</button>
+        <button aria-pressed="false" data-f="wood">גווני עץ</button>
+        <button aria-pressed="false" data-f="light">עם תאורה</button>
+      </div>
+    </div>
+    <div class="grid" id="grid">
+      <figure class="tall" data-tags="living"><img src="img/p07.jpg" alt="קיר טלוויזיה: סרגלים ופלטות עם פסי ניתוק שחורים" loading="lazy"><figcaption>סרגלים ופלטות עם פסי ניתוק</figcaption></figure>
+      <figure class="tall" data-tags="bed"><img src="img/p08.jpg" alt="חדר שינה מחופה סרגלים מקיר לקיר" loading="lazy"><figcaption>חדר שינה מקיר לקיר</figcaption></figure>
+      <figure class="tall" data-tags="living wood"><img src="img/p19.jpg" alt="עמוד מחופה סרגלי עץ ליד המטבח" loading="lazy"><figcaption>עמוד מחופה ליד המטבח</figcaption></figure>
+      <figure class="tall" data-tags="living"><img src="img/p13.jpg" alt="סלון עם קיר סרגלים מאחורי הטלוויזיה" loading="lazy"><figcaption>סלון בגוון טאופ</figcaption></figure>
+      <figure class="tall" data-tags="living"><img src="img/p10.jpg" alt="קיר סרגלים שחור בסלון" loading="lazy"><figcaption>קיר סרגלים שחור</figcaption></figure>
+      <figure class="tall" data-tags="bed"><img src="img/p04.jpg" alt="חדר מחופה סרגלים ופלטות עם פסי ניתוק" loading="lazy"><figcaption>חדר עם פסי ניתוק</figcaption></figure>
+      <figure class="wide" data-tags="wood light"><img src="img/p15.jpg" alt="סרגלי עץ עם פסי לד באמצע שיפוץ" loading="lazy"><figcaption>סרגלי עץ ולד, באמצע שיפוץ</figcaption></figure>
+      <figure class="tall" data-tags="living wood light"><img src="img/p18.jpg" alt="סרגלי עץ על רקע שחור עם מנורות קיר" loading="lazy"><figcaption>סרגלי עץ ומנורות קיר</figcaption></figure>
+      <figure class="tall" data-tags="living light"><img src="img/p02.jpg" alt="קיר טלוויזיה עם פלטות, סרגלים ותאורה" loading="lazy"><figcaption>קיר טלוויזיה עם תאורה</figcaption></figure>
+      <figure class="tall" data-tags="bed"><img src="img/p06.jpg" alt="חדר שינה עם חיפוי פלטות מסביב לדלתות" loading="lazy"><figcaption>חיפוי מסביב לדלתות</figcaption></figure>
+      <figure class="tall" data-tags="living"><img src="img/p12.jpg" alt="קיר פלטות ענק בסלון עם סרגלים בצדדים" loading="lazy"><figcaption>קיר פלטות ענק</figcaption></figure>
+      <figure class="tall" data-tags="living"><img src="img/p03.jpg" alt="פלטות בגוון חול עם פסי סרגלים" loading="lazy"><figcaption>פלטות בגוון חול</figcaption></figure>
+      <figure class="tall" data-tags="living"><img src="img/p05.jpg" alt="קיר טלוויזיה בגוון שמנת" loading="lazy"><figcaption>קיר טלוויזיה בשמנת</figcaption></figure>
+      <figure class="tall" data-tags="wood"><img src="img/p20.jpg" alt="סרגלי אגוז בזמן ההתקנה" loading="lazy"><figcaption>סרגלי אגוז בהתקנה</figcaption></figure>
+      <figure class="tall" data-tags="bed light"><img src="img/bed-wall-2.jpg" alt="קיר מיטה עם תאורת מסילה" loading="lazy"><figcaption>קיר מיטה עם תאורה</figcaption></figure>
+    </div>
+  </div>
+</div></section>
+
+<section class="block cta-band" id="quote"><div class="wrap cta-grid">
+  <div>
+    <div class="eyebrow">הצעת מחיר</div>
+    <h2>אהבתם קיר? נבנה לכם אחד כזה</h2>
+    <p class="lead">השאירו שם וטלפון ונפתח לכם הודעת וואטסאפ מוכנה. צרפו אליה תמונה של הקיר ומידות בערך, ונחזור אליכם עם הערכת מחיר.</p>
+    <div class="promise"><span>ייעוץ חינם</span><span>דוגמיות עד הבית</span><span>בלי התחייבות</span></div>
+  </div>
+  <form class="quick lead-form" novalidate>
+    <div class="row2">
+      <div class="field"><label for="qName">שם</label><input id="qName" name="name" autocomplete="name" required></div>
+      <div class="field"><label for="qPhone">טלפון</label><input id="qPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" required></div>
+    </div>
+    <div class="field"><label for="qType">איזה קיר?</label><select id="qType" name="type"><option>קיר טלוויזיה בסלון</option><option>קיר מיטה / חדר שינה</option><option>מטבח</option><option>עסק, מלון או משרד</option><option>אחר</option></select></div>
+    <button class="btn btn-primary" type="submit">קבלו הצעת מחיר בוואטסאפ</button>
+    <p class="privacy">הפרטים נשלחים רק אלינו ולא מועברים לאף אחד. <a href="legal/privacy.html">מדיניות הפרטיות</a></p>
+    <p class="form-msg" role="status"></p>
+  </form>
+</div></section>
+
+<section class="block intro" id="about"><div class="wrap intro-grid">
+  <div><div class="eyebrow">מה זה חיפוי קירות</div><h2>מה זה חיפוי קירות, ולמה זה עובד?</h2></div>
+  <div class="intro-copy">
+    <p class="answer"><strong>חיפוי קירות</strong> הוא שכבה דקורטיבית שמותקנת על קיר קיים ומשנה את המראה של החדר בלי בנייה ובלי טיח. ב-WallUp משלבים פלטות חלקות, סרגלים מחורצים, פסי ניתוק ותאורת לד, ומתאימים כל קיר לחלל שלו.</p>
+    <p>אנחנו מחפים קירות טלוויזיה, קירות מיטה, מסדרונות, עמודים, דלתות נסתרות ומטבחים, ועובדים גם עם עסקים: ברים, אולמות אירועים וחדרי מלון. כל עבודה מתחילה בתמונה של הקיר בוואטסאפ ונגמרת בהתקנה מלאה, כולל פינות וסיומות.</p>
+  </div>
+</div></section>
+
+<section class="block kitchen" id="kitchens"><div class="wrap k-grid">
+  <div class="k-media">
+    <figure><img src="img/web/kitchen-dark.jpg" alt="השראה: מטבח כהה עם חיפוי דמוי שיש בין הארונות" loading="lazy"><span class="tag-insp">השראה</span></figure>
+    <figure><img src="img/web/kitchen-light.jpg" alt="השראה: מטבח בהיר עם חיפוי שיש לבן מאחורי הכיריים" loading="lazy"><span class="tag-insp">השראה</span></figure>
+  </div>
+  <div class="k-copy">
+    <div class="eyebrow">חיפוי מטבחים</div>
+    <h2>חיפוי למטבח: בין הארונות ומאחורי הכיריים</h2>
+    <p class="lead">חיפוי מטבח מחליף את האריחים בין הארונות במשטח רציף ונקי, בגוון שמתאים לשיש ולחזיתות. התמונות כאן הן השראה לסגנון, ועבודות מטבח שלנו נשמח לשלוח בוואטסאפ.</p>
+    <ul class="k-list">
+      <li><b>בין ארונות עליונים לתחתונים</b><span>משטח אחד בלי פוגות, שקל לנקות</span></li>
+      <li><b>מאחורי הכיריים</b><span>חומר שמתאים לאזור חום ואדים</span></li>
+      <li><b>קיר פתוח ליד המטבח</b><span>המשך של אותו חיפוי לסלון או לפינת האוכל</span></li>
+    </ul>
+    <a class="btn btn-primary wa-link" style="align-self:flex-start" data-msg="היי WallUp, אשמח להצעת מחיר לחיפוי מטבח. מצרף תמונה של המטבח:" href="#contact">הצעת מחיר לחיפוי מטבח</a>
+  </div>
+</div></section>
+
+<section class="block" id="materials"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="eyebrow">חומרים וגוונים</div><h2>ארבע האבנים של WallUp</h2><p class="lead">ארבעת הגוונים שבלוגו שלנו הם גם ארבע משפחות החיפוי שאנחנו עובדים איתן. לא בטוחים? נביא דוגמיות הביתה.</p></div>
+  </div>
+  <div class="mats">
+    <div class="mat"><div class="sw"><img src="img/web/marble-black.jpg" alt="דוגמת שיש שחור עם עורקים לבנים" loading="lazy"></div><h3>שיש שחור</h3><p>דרמטי ויוקרתי, לקיר מרכזי, לבר או לחזית אי במטבח.</p><a class="link wa-link" data-msg="היי WallUp, אשמח לדוגמית של חיפוי שיש שחור." href="#contact">הזמינו דוגמית</a></div>
+    <div class="mat"><div class="sw"><img src="img/web/concrete.jpg" alt="דוגמת בטון אפור בהיר" loading="lazy"></div><h3>בטון אפור</h3><p>שקט ומודרני, משתלב עם ריצוף אפור וחזיתות כהות.</p><a class="link wa-link" data-msg="היי WallUp, אשמח לדוגמית של חיפוי דמוי בטון." href="#contact">הזמינו דוגמית</a></div>
+    <div class="mat"><div class="sw"><img src="img/web/marble-white.jpg" alt="דוגמת שיש לבן" loading="lazy"></div><h3>שיש לבן</h3><p>מאיר ונקי, הבחירה הקלאסית למטבח ולאמבטיה.</p><a class="link wa-link" data-msg="היי WallUp, אשמח לדוגמית של חיפוי שיש לבן." href="#contact">הזמינו דוגמית</a></div>
+    <div class="mat"><div class="sw"><img src="img/web/gold.jpg" alt="דוגמת גימור זהב" loading="lazy"></div><h3>זהב</h3><p>לפסי ניתוק, פרופילים ופרטים קטנים שנותנים נגיעה חמה.</p><a class="link wa-link" data-msg="היי WallUp, אשמח לשמוע על פרופילים ופסים בגימור זהב." href="#contact">שאלו אותנו</a></div>
+  </div>
+  <div class="woods">
+    <b>ובסרגלים, הגוונים מתיק העבודות:</b>
+    <span><i class="dot" style="background:#D8CDBF"></i>חול</span>
+    <span><i class="dot" style="background:#B98D58"></i>אלון</span>
+    <span><i class="dot" style="background:#6E4A2E"></i>אגוז</span>
+    <span><i class="dot" style="background:#9C9086"></i>טאופ</span>
+    <span><i class="dot" style="background:#1E1D1C"></i>שחור</span>
+  </div>
+</div></section>
+
+<section class="block" id="system" style="padding-top:0"><div class="wrap">
+  <div class="sep" aria-hidden="true" style="margin-bottom:88px"></div>
+  <div class="sys-grid">
+    <div>
+      <div class="eyebrow">מערכת חיפוי שלמה</div>
+      <h2>פלטות, סרגלים, פסי ניתוק ולד: קיר אחד מתוכנן</h2>
+      <p class="lead">קיר שנראה מדויק מתחיל בתכנון של כל החלקים יחד, כמו בעבודות שבתיק העבודות.</p>
+      <ul class="sys-list">
+        <li><b>פלטה</b><span>משטח גדול וחלק שיוצר קיר שקט.</span></li>
+        <li><b>סרגל מחורץ</b><span>קווים אנכיים עם עומק וצל, בגוון תואם.</span></li>
+        <li><b>פס ניתוק</b><span>קו שחור דק בין הפלטות שנותן מראה אדריכלי.</span></li>
+        <li><b>תאורת לד</b><span>פסי אור בתוך החיפוי, לקיר טלוויזיה או לקיר מיטה.</span></li>
+        <li><b>פינה וסיומת</b><span>סוגרות קצוות, משקופים ופינות חיצוניות.</span></li>
+      </ul>
+    </div>
+    <figure class="sys-figure" aria-label="שרטוט של קיר מחופה עם חלקי המערכת">
+      <svg viewBox="0 0 520 380" role="img">
+        <defs><pattern id="flute" width="14" height="10" patternUnits="userSpaceOnUse"><rect width="14" height="10" fill="#E6E0D8"/><rect x="11" width="3" height="10" fill="#CFC7BC"/></pattern></defs>
+        <rect x="20" y="30" width="480" height="300" fill="#FAF8F5" stroke="#E0D9CF"/>
+        <rect x="40" y="50" width="150" height="260" fill="#D9CFC2"/>
+        <rect x="190" y="50" width="5" height="260" fill="#151413"/>
+        <rect x="195" y="50" width="130" height="260" fill="url(#flute)"/>
+        <rect x="248" y="50" width="12" height="200" fill="#FFE9B8" opacity=".4"/>
+        <rect x="252" y="50" width="4" height="200" fill="#FFF6DF"/>
+        <rect x="325" y="50" width="5" height="260" fill="#151413"/>
+        <rect x="330" y="50" width="152" height="260" fill="#D9CFC2"/>
+        <rect x="405" y="50" width="2" height="260" fill="#151413"/>
+        <rect x="482" y="50" width="8" height="260" fill="#151413"/>
+        <rect x="40" y="310" width="450" height="8" fill="#151413"/>
+        <g font-family="Assistant,Arial" font-size="15" font-weight="700" fill="#151413" text-anchor="middle">
+          <line x1="115" y1="180" x2="115" y2="352" stroke="#151413"/><text x="115" y="370">פלטה</text>
+          <line x1="290" y1="180" x2="290" y2="352" stroke="#151413"/><text x="290" y="370">סרגל מחורץ</text>
+          <line x1="193" y1="22" x2="193" y2="50" stroke="#151413"/><text x="193" y="16">פס ניתוק</text>
+          <line x1="254" y1="22" x2="254" y2="50" stroke="#BE832E"/><text x="268" y="16" fill="#97621D">תאורת לד</text>
+          <line x1="486" y1="22" x2="486" y2="50" stroke="#151413"/><text x="470" y="16">סיומת</text>
+        </g>
+      </svg>
+    </figure>
+  </div>
+  <div class="cmp-wrap">
+    <table class="cmp">
+      <caption>סרגל מחורץ, פלטה או שילוב: מה מתאים לקיר שלכם?</caption>
+      <thead><tr><th scope="col">סוג החיפוי</th><th scope="col">איך זה נראה</th><th scope="col">מתאים במיוחד ל</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">סרגלים מחורצים</th><td>קווים אנכיים עם עומק וצל, מראה חם ועשיר</td><td>קיר טלוויזיה, קיר מיטה, עמודים ודלתות נסתרות</td></tr>
+        <tr><th scope="row">פלטות חלקות</th><td>משטח גדול ושקט, עם פסי ניתוק דקים</td><td>קירות ארוכים בסלון ובמסדרון, מטבחים</td></tr>
+        <tr><th scope="row">שילוב פלטות וסרגלים</th><td>קיר אדריכלי עם קצב, לרוב עם פס ניתוק שחור</td><td>קיר מרכזי בסלון או בחדר השינה</td></tr>
+        <tr><th scope="row">חיפוי עם תאורת לד</th><td>פסי אור אנכיים בין הסרגלים</td><td>קיר טלוויזיה, קיר מיטה ועסקים</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div></section>
+
+<section class="block process" id="process"><div class="wrap">
+  <div class="sec-head"><div><div class="eyebrow">איך זה עובד</div><h2>איך עובד חיפוי קיר: מתמונה בוואטסאפ לקיר מוכן</h2></div></div>
+  <div class="steps">
+    <div class="step"><h3>שולחים תמונה</h3><p>צלמו את הקיר ושלחו לנו בוואטסאפ עם מידות בערך.</p></div>
+    <div class="step"><h3>בוחרים גוון</h3><p>מקבלים המלצה ודוגמיות, ובוחרים חומר וגימור.</p></div>
+    <div class="step"><h3>מדידה והצעת מחיר</h3><p>מגיעים למדוד בשטח ונותנים הצעה מסודרת.</p></div>
+    <div class="step"><h3>התקנה</h3><p>מתקינים בצורה נקייה, כולל חיבורים, פינות וסיומות.</p></div>
+  </div>
+  <div class="after"><a class="btn btn-primary wa-link" data-msg="היי WallUp, אשמח להצעת מחיר לחיפוי קיר. מצרף תמונה:" href="#contact">התחילו בשלב 1: שלחו תמונה</a><span class="promise"><span>ייעוץ חינם</span><span>בלי התחייבות</span></span></div>
+</div></section>
+
+<section class="block" id="faq"><div class="wrap faq-grid">
+  <div><div class="eyebrow">שאלות נפוצות</div><h2>שאלות נפוצות על חיפוי קירות</h2><a class="link wa-link" data-msg="היי WallUp, יש לי שאלה על חיפוי:" href="#contact">לא מצאתם תשובה? שאלו בוואטסאפ</a></div>
+  <div id="faqList">
+    <details open><summary><h3>מה זה חיפוי קירות?</h3></summary><p>חיפוי קירות הוא שכבה דקורטיבית שמותקנת על קיר קיים, בלי לבנות או לטייח מחדש. משתמשים בפלטות חלקות, בסרגלים מחורצים או בשילוב של שניהם, עם פסי ניתוק ותאורת לד. התוצאה היא קיר מעוצב לסלון, לחדר השינה, לקיר טלוויזיה, למטבח או לעסק.</p></details>
+    <details><summary><h3>על אילו קירות אפשר להתקין חיפוי?</h3></summary><p>על רוב הקירות בבית: גבס, בלוקים וטיח. הקיר צריך להיות יבש וישר יחסית. בביקור המדידה נבדוק את מצב הקיר ונגיד אם צריך הכנה לפני ההתקנה.</p></details>
+    <details><summary><h3>מה ההבדל בין פלטה לסרגל מחורץ?</h3></summary><p>פלטה היא משטח גדול וחלק שיוצר קיר שקט ונקי. סרגל מחורץ יוצר קווים אנכיים עם עומק וצל. ברוב העבודות שלנו משלבים את שניהם באותו קיר, עם פס ניתוק שחור ביניהם.</p></details>
+    <details><summary><h3>כמה עולה חיפוי קיר?</h3></summary><p>המחיר תלוי בגודל הקיר, בסוג החיפוי, בגוון ובתוספות כמו תאורת לד ופינות. שלחו תמונה ומידות בערך בוואטסאפ ונחזור אליכם עם הערכה. אחרי מדידה בשטח תקבלו הצעת מחיר מסודרת.</p></details>
+    <details><summary><h3>כמה זמן לוקחת התקנת חיפוי?</h3></summary><p>אספקה והתקנה החל מ-24 שעות. משך העבודה המדויק תלוי בגודל הקיר ובכמות הפרטים, כמו פתחים, שקעים ותאורה, ונגיד לכם אותו כבר בהצעת המחיר, אחרי המדידה.</p></details>
+    <details><summary><h3>אפשר לחפות קיר במטבח?</h3></summary><p>כן. אפשר לחפות את הקיר שבין הארונות, את האזור שמאחורי הכיריים ואת הקיר הפתוח שליד המטבח. נתאים חומר שמתאים לאזור רטוב ולאזור חום, וקל לניקוי.</p></details>
+    <details><summary><h3>אפשר לשלב תאורת לד בתוך החיפוי?</h3></summary><p>כן. בהרבה מהעבודות שלנו שילבנו פסי לד אנכיים בין הסרגלים או בצד הקיר, בעיקר בקיר טלוויזיה ובקיר מיטה.</p></details>
+    <details><summary><h3>עושים חיפוי גם לעסקים?</h3></summary><p>כן. חיפינו בר באולם אירועים וחדר במלון, ואנחנו עובדים גם עם משרדים, חנויות ומסעדות.</p></details>
+    <details><summary><h3>אפשר לראות את החומר לפני שמזמינים?</h3></summary><p>כן. אנחנו מביאים דוגמיות כדי שתראו את הגוון והמרקם באור של הבית לפני ההחלטה.</p></details>
+    <details><summary><h3>באילו אזורים אתם עובדים?</h3></summary><p>אנחנו עובדים בגבעתיים, רמת גן, בני ברק, פתח תקווה, תל אביב, קריית אונו, גבעת שמואל, הרצליה, הוד השרון, חולון, בת ים וראשון לציון. גרים קרוב לאזורים האלה? שלחו הודעה ונבדוק.</p></details>
+  </div>
+</div></section>
+
+<section class="block contact" id="contact"><div class="wrap contact-grid">
+  <div>
+    <div class="eyebrow">צור קשר</div>
+    <h2>הצעת מחיר לחיפוי קיר</h2>
+    <p class="lead">הדרך הכי מהירה: שלחו תמונה של הקיר בוואטסאפ. אפשר גם להתקשר או למלא את הטופס.</p>
+    <div class="ways">
+      <a class="num tel-link" href="#contact">053-619-6048</a>
+      <a class="btn btn-primary wa-link" data-msg="היי WallUp, אשמח להצעת מחיר לחיפוי קיר. מצרף תמונה:" href="#contact">שלחו תמונה בוואטסאפ</a>
+    </div>
+  </div>
+  <form class="full lead-form" novalidate>
+    <div class="field"><label for="fName">שם</label><input id="fName" name="name" autocomplete="name" required></div>
+    <div class="field"><label for="fPhone">טלפון</label><input id="fPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" required></div>
+    <div class="field"><label for="fCity">עיר</label><input id="fCity" name="city" autocomplete="address-level2"></div>
+    <div class="field"><label for="fType">איזה קיר?</label><select id="fType" name="type"><option>קיר טלוויזיה בסלון</option><option>קיר מיטה / חדר שינה</option><option>מטבח</option><option>עסק, מלון או משרד</option><option>אחר</option></select></div>
+    <div class="field wide"><label for="fMsg">פרטים נוספים</label><textarea id="fMsg" name="msg" rows="3" placeholder="מידות בערך, גוון שאהבתם, עבודה מהתיק שאהבתם"></textarea></div>
+    <div class="wide" style="display:flex;flex-direction:column;gap:10px"><button class="btn btn-primary" type="submit">קבלו הצעת מחיר בוואטסאפ</button><p class="privacy">הפרטים נשלחים רק אלינו ולא מועברים לאף אחד. <a href="legal/privacy.html">מדיניות הפרטיות</a></p><p class="form-msg" role="status"></p></div>
+  </form>
+</div></section>
+</main>
+
+<footer lang="he" dir="rtl"><div class="wrap">
+  <div><img class="logo" src="logo.png" alt="WallUp" width="900" height="240"><p class="muted">WallUp, חיפוי לקירות ומטבחים: סרגלים מחורצים, פלטות, פסי ניתוק ותאורת לד. ייעוץ, מדידה והתקנה בגוש דן ובמרכז.</p><p class="muted" style="margin-top:10px">טלפון ווואטסאפ: <span dir="ltr">053-619-6048</span></p></div>
+  <div><h4>חיפוי</h4><ul><li><a href="#work">תיק עבודות</a></li><li><a href="#kitchens">חיפוי מטבחים</a></li><li><a href="#materials">חומרים וגוונים</a></li><li><a href="#system">מערכת חיפוי</a></li></ul></div>
+  <div><h4>WallUp</h4><ul><li><a href="#about">מה זה חיפוי קירות</a></li><li><a href="#process">איך זה עובד</a></li><li><a href="#areas">אזורי שירות</a></li><li><a href="#faq">שאלות נפוצות</a></li><li><a href="#contact">צור קשר</a></li></ul></div>
+  <div class="credits"><span>© 2026 WallUp · חיפוי לקירות ומטבחים · <a href="legal/terms.html">תקנון</a> · <a href="legal/privacy.html">מדיניות פרטיות</a> · <a href="legal/accessibility.html">הצהרת נגישות</a></span><span>תיק העבודות: עבודות של WallUp. תמונות השראה ודוגמאות חומר: Unsplash.</span></div>
+</div></footer>
+
+<div class="mbar" lang="he" dir="rtl">
+  <a class="btn btn-ghost tel-link" href="#contact">התקשרו</a>
+  <a class="btn btn-primary wa-link" data-msg="היי WallUp, אשמח להצעת מחיר לחיפוי קיר. מצרף תמונה:" href="#contact">הצעת מחיר בוואטסאפ</a>
+</div>
+<a class="fab wa-link" data-msg="היי WallUp, אשמח לייעוץ על חיפוי קיר. מצרף תמונה:" href="#contact" aria-label="ייעוץ חינם בוואטסאפ"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg><span>ייעוץ חינם</span></a>
+
+<a class="fab-tel tel-link" href="#contact" aria-label="התקשרו 053-619-6048"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg></a>
+
+<section class="thanks" id="thanks" lang="he" dir="rtl" hidden aria-labelledby="thxTitle">
+  <div class="thx-in">
+    <a href="#top" class="thx-logo"><img src="logo.png" alt="WallUp חיפוי לקירות ומטבחים" width="900" height="240"></a>
+    <div class="thx-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+    <h2 id="thxTitle">תודה<span id="thxName"></span>! הפרטים מוכנים</h2>
+    <p class="thx-lead">נפתחה לכם הודעת וואטסאפ עם כל הפרטים. נשאר רק ללחוץ שם על "שליחה", ואנחנו חוזרים אליכם עם הערכת מחיר.</p>
+    <ol class="thx-steps">
+      <li><b>שלחו את ההודעה בוואטסאפ</b><span>אם אפשר, צרפו תמונה של הקיר ומידות בערך.</span></li>
+      <li><b>אנחנו חוזרים אליכם</b><span>עם הערכת מחיר והמלצה על גוון וחומר.</span></li>
+      <li><b>מתאמים מדידה ודוגמיות</b><span>ואחר כך הצעת מחיר מסודרת.</span></li>
+    </ol>
+    <div class="thx-actions">
+      <a class="btn btn-primary thx-wa" id="thxWa" href="#contact" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>לא נפתח וואטסאפ? לחצו כאן</a>
+      <a class="btn btn-ghost tel-link" href="#contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>או התקשרו: <span class="tel-num">053-619-6048</span></a>
+    </div>
+    <a class="link thx-back" href="#work">בינתיים, הציצו בתיק העבודות</a>
+  </div>
+</section>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="תמונה מוגדלת"><button class="close" id="lbClose" aria-label="סגירה">×</button><img id="lbImg" alt=""><p id="lbCap"></p></div>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "HomeAndConstructionBusiness",
+   "@id": "#business",
+   "name": "WallUp",
+   "alternateName": "WallUp חיפוי לקירות ומטבחים",
+   "description": "חיפוי קירות ומטבחים לבתים ולעסקים בגוש דן ובמרכז: סרגלים מחורצים, פלטות, פסי ניתוק ותאורת לד. ייעוץ חינם בוואטסאפ, דוגמיות עד הבית, מדידה והתקנה.",
+   "telephone": "+972-53-619-6048",
+   "logo": "logo.png",
+   "image": [
+    "img/hidden-door.jpg",
+    "img/oak-tv.jpg",
+    "img/p16.jpg"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "IL"
+   },
+   "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+972-53-619-6048",
+    "contactType": "customer service",
+    "availableLanguage": [
+     "he"
+    ]
+   },
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "שירותי חיפוי",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "חיפוי קירות בסרגלים מחורצים"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "חיפוי קיר טלוויזיה"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "חיפוי קירות בפלטות עם פסי ניתוק"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "חיפוי קיר עם תאורת לד"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "חיפוי מטבחים"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "חיפוי קירות לעסקים ומלונות"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "דלת נסתרת בתוך חיפוי"
+      }
+     }
+    ]
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "גבעתיים"
+    },
+    {
+     "@type": "City",
+     "name": "רמת גן"
+    },
+    {
+     "@type": "City",
+     "name": "בני ברק"
+    },
+    {
+     "@type": "City",
+     "name": "פתח תקווה"
+    },
+    {
+     "@type": "City",
+     "name": "תל אביב"
+    },
+    {
+     "@type": "City",
+     "name": "קריית אונו"
+    },
+    {
+     "@type": "City",
+     "name": "גבעת שמואל"
+    },
+    {
+     "@type": "City",
+     "name": "הרצליה"
+    },
+    {
+     "@type": "City",
+     "name": "הוד השרון"
+    },
+    {
+     "@type": "City",
+     "name": "חולון"
+    },
+    {
+     "@type": "City",
+     "name": "בת ים"
+    },
+    {
+     "@type": "City",
+     "name": "ראשון לציון"
+    }
+   ]
+  },
+  {
+   "@type": "ImageGallery",
+   "name": "תיק עבודות WallUp",
+   "about": {
+    "@id": "#business"
+   },
+   "image": [
+    {
+     "@type": "ImageObject",
+     "contentUrl": "img/hidden-door.jpg",
+     "caption": "קיר סרגלים עם דלת נסתרת"
+    },
+    {
+     "@type": "ImageObject",
+     "contentUrl": "img/oak-tv.jpg",
+     "caption": "קיר טלוויזיה בסרגלי אלון"
+    },
+    {
+     "@type": "ImageObject",
+     "contentUrl": "img/p16.jpg",
+     "caption": "חדר מלון מול הים: קיר סרגלי אגוז"
+    },
+    {
+     "@type": "ImageObject",
+     "contentUrl": "img/p01.jpg",
+     "caption": "בר שחור באולם אירועים"
+    },
+    {
+     "@type": "ImageObject",
+     "contentUrl": "img/p09.jpg",
+     "caption": "קיר טלוויזיה עם פסי לד אנכיים"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "מה זה חיפוי קירות?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "חיפוי קירות הוא שכבה דקורטיבית שמותקנת על קיר קיים, בלי לבנות או לטייח מחדש. משתמשים בפלטות חלקות, בסרגלים מחורצים או בשילוב של שניהם, עם פסי ניתוק ותאורת לד. התוצאה היא קיר מעוצב לסלון, לחדר השינה, לקיר טלוויזיה, למטבח או לעסק."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "על אילו קירות אפשר להתקין חיפוי?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "על רוב הקירות בבית: גבס, בלוקים וטיח. הקיר צריך להיות יבש וישר יחסית. בביקור המדידה נבדוק את מצב הקיר ונגיד אם צריך הכנה לפני ההתקנה."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "מה ההבדל בין פלטה לסרגל מחורץ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "פלטה היא משטח גדול וחלק שיוצר קיר שקט ונקי. סרגל מחורץ יוצר קווים אנכיים עם עומק וצל. ברוב העבודות שלנו משלבים את שניהם באותו קיר, עם פס ניתוק שחור ביניהם."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "כמה עולה חיפוי קיר?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "המחיר תלוי בגודל הקיר, בסוג החיפוי, בגוון ובתוספות כמו תאורת לד ופינות. שלחו תמונה ומידות בערך בוואטסאפ ונחזור אליכם עם הערכה. אחרי מדידה בשטח תקבלו הצעת מחיר מסודרת."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "כמה זמן לוקחת התקנת חיפוי?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "אספקה והתקנה החל מ-24 שעות. משך העבודה המדויק תלוי בגודל הקיר ובכמות הפרטים, כמו פתחים, שקעים ותאורה, ונגיד לכם אותו כבר בהצעת המחיר, אחרי המדידה."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "אפשר לחפות קיר במטבח?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "כן. אפשר לחפות את הקיר שבין הארונות, את האזור שמאחורי הכיריים ואת הקיר הפתוח שליד המטבח. נתאים חומר שמתאים לאזור רטוב ולאזור חום, וקל לניקוי."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "אפשר לשלב תאורת לד בתוך החיפוי?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "כן. בהרבה מהעבודות שלנו שילבנו פסי לד אנכיים בין הסרגלים או בצד הקיר, בעיקר בקיר טלוויזיה ובקיר מיטה."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "עושים חיפוי גם לעסקים?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "כן. חיפינו בר באולם אירועים וחדר במלון, ואנחנו עובדים גם עם משרדים, חנויות ומסעדות."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "אפשר לראות את החומר לפני שמזמינים?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "כן. אנחנו מביאים דוגמיות כדי שתראו את הגוון והמרקם באור של הבית לפני ההחלטה."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "באילו אזורים אתם עובדים?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "אנחנו עובדים בגבעתיים, רמת גן, בני ברק, פתח תקווה, תל אביב, קריית אונו, גבעת שמואל, הרצליה, הוד השרון, חולון, בת ים וראשון לציון. גרים קרוב לאזורים האלה? שלחו הודעה ונבדוק."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "HowTo",
+   "name": "איך עובד חיפוי קיר עם WallUp",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "position": 1,
+     "name": "שולחים תמונה",
+     "text": "צלמו את הקיר ושלחו לנו בוואטסאפ עם מידות בערך."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 2,
+     "name": "בוחרים גוון",
+     "text": "מקבלים המלצה ודוגמיות, ובוחרים חומר וגימור."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 3,
+     "name": "מדידה והצעת מחיר",
+     "text": "מגיעים למדוד בשטח ונותנים הצעה מסודרת."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 4,
+     "name": "התקנה",
+     "text": "מתקינים בצורה נקייה, כולל חיבורים, פינות וסיומות."
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script>
+try{document.documentElement.lang="he";document.documentElement.dir="rtl"}catch(e){}
+const WA="972536196048", TEL="+972536196048";
+
+document.querySelectorAll(".wa-link").forEach(a=>{
+  const msg=a.dataset.msg||"היי WallUp, אשמח להצעת מחיר לחיפוי קיר.";
+  a.href="https://wa.me/"+WA+"?text="+encodeURIComponent(msg);a.target="_blank";a.rel="noopener";
+});
+document.querySelectorAll(".tel-link").forEach(a=>{a.href="tel:"+TEL});
+
+const grid=document.getElementById("grid");
+document.querySelectorAll(".filters button").forEach(b=>b.addEventListener("click",()=>{
+  document.querySelectorAll(".filters button").forEach(x=>x.setAttribute("aria-pressed",x===b));
+  const f=b.dataset.f;
+  grid.querySelectorAll("figure").forEach(fig=>{fig.hidden=!(f==="all"||fig.dataset.tags.split(" ").includes(f))});
+}));
+
+const lb=document.getElementById("lb"),lbImg=document.getElementById("lbImg"),lbCap=document.getElementById("lbCap");
+function openLb(img){lbImg.src=img.src;lbImg.alt=img.alt;lbCap.textContent=img.alt;lb.hidden=false;document.getElementById("lbClose").focus()}
+document.querySelectorAll(".grid figure,.p-media,.hero-mosaic figure").forEach(f=>{
+  f.tabIndex=0;f.setAttribute("role","button");f.setAttribute("aria-label","הגדלת תמונה: "+f.querySelector("img").alt);
+  f.addEventListener("click",()=>openLb(f.querySelector("img")));
+  f.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();openLb(f.querySelector("img"))}});
+});
+lb.addEventListener("click",e=>{if(e.target!==lbImg)lb.hidden=true});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")lb.hidden=true});
+
+const nav=document.getElementById("nav"),mb=document.getElementById("menuBtn");
+mb.onclick=()=>{const o=nav.classList.toggle("open");mb.setAttribute("aria-expanded",o)};
+nav.addEventListener("click",e=>{if(e.target.tagName==="A"){nav.classList.remove("open");mb.setAttribute("aria-expanded","false")}});
+
+
+/* hero quick form: two steps */
+(function(){
+  const hf=document.querySelector(".hero-form");if(!hf)return;
+  const s1=hf.querySelector('[data-step="1"]'),s2=hf.querySelector('[data-step="2"]'),chosen=hf.querySelector(".hf-chosen");
+  hf.querySelectorAll('input[name="type"]').forEach(r=>r.addEventListener("change",()=>{
+    chosen.textContent="("+r.nextElementSibling.textContent+")";s1.hidden=true;s2.hidden=false;
+    setTimeout(()=>hf.querySelector("#hName").focus({preventScroll:true}),30);
+  }));
+  hf.querySelector(".hf-back").addEventListener("click",()=>{s2.hidden=true;s1.hidden=false;hf.querySelector(".form-msg").textContent=""});
+  hf.addEventListener("reset",()=>{s2.hidden=true;s1.hidden=false});
+})();
+
+/* thank-you page routing */
+const thx=document.getElementById("thanks");
+function route(){const on=location.hash==="#thanks";thx.hidden=!on;document.body.style.overflow=on?"hidden":"";if(on){thx.scrollTop=0;document.getElementById("thxTitle").setAttribute("tabindex","-1");document.getElementById("thxTitle").focus()}}
+window.addEventListener("hashchange",route);route();
+thx.querySelectorAll('a[href="#top"],a[href="#work"]').forEach(a=>a.addEventListener("click",()=>{thx.hidden=true;document.body.style.overflow=""}));
+document.querySelectorAll(".lead-form").forEach(form=>{
+  const msg=form.querySelector(".form-msg");
+  form.addEventListener("submit",e=>{
+    e.preventDefault();msg.classList.remove("err");
+    const f=new FormData(form);
+    if(!String(f.get("name")||"").trim()||!String(f.get("phone")||"").trim()){msg.textContent="מלאו שם וטלפון כדי שנוכל לחזור אליכם.";msg.classList.add("err");return}
+    const lines=["היי WallUp, אשמח להצעת מחיר לחיפוי.","שם: "+f.get("name"),"טלפון: "+f.get("phone")];
+    if(f.get("city"))lines.push("עיר: "+f.get("city"));
+    lines.push("איזה קיר: "+f.get("type"));
+    if(f.get("msg"))lines.push(f.get("msg"));
+    const waUrl="https://wa.me/"+WA+"?text="+encodeURIComponent(lines.join("\n"));
+    const a=document.createElement("a");a.href=waUrl;a.target="_blank";a.rel="noopener";document.body.appendChild(a);a.click();a.remove();
+    msg.textContent="";
+    document.getElementById("thxWa").href=waUrl;
+    document.getElementById("thxName").textContent=", "+String(f.get("name")).trim().split(/\s+/)[0];
+    form.reset();
+    location.hash="thanks";
+  });
+});
+</script>
+<script src="a11y.js" data-statement="legal/accessibility.html"></script>
+</body>
+</html>

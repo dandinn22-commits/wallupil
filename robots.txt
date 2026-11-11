@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# אחרי העלייה לדומיין, הוסיפו כאן שורה:
+# Sitemap: https://YOUR-DOMAIN/sitemap.xml
