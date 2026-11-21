@@ -98,5 +98,19 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&
 <footer>© 2026 WallUp · חיפוי קירות</footer>
 <script src="../a11y.js" data-statement="accessibility.html"></script>
 <script src="/lead-alerts.js?v=1" data-brand="WallUp" defer></script>
+<!-- מעקב לחיצות טלפון ווטסאפ (אירועים נפרדים) -->
+<script>
+document.addEventListener('click', function (e) {
+  var link = e.target.closest && e.target.closest('a');
+  if (!link || typeof gtag !== 'function') return;
+  var href = link.getAttribute('href') || '';
+  if (href.indexOf('tel:') === 0) {
+    gtag('event', 'phone_click', { link_url: href });
+  }
+  if (href.indexOf('wa.me') !== -1 || href.indexOf('whatsapp') !== -1) {
+    gtag('event', 'whatsapp_click', { link_url: href });
+  }
+});
+</script>
 </body>
 </html>
